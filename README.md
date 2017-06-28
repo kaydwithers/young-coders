@@ -1,4 +1,4 @@
-# blog-in-5-min
+# Young Coders
 
 > A static blog or (dynamic blog) based on Contentful
 
