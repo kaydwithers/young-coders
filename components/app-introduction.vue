@@ -3,8 +3,10 @@
   .w-100.pv6.f6.ph3.ph4-ns
     .mw7.center.ph3-ns
       .tc
-        app-heading(text='Lil\' about me')
-        app-paragraph(text='Praesent ac dignissim diam. Aliquam lobortis elit et sapien eleifend, at sollicitudin metus elementum. Morbi imperdiet id ipsum at tristique. Nam suscipit tristique sem, laoreet leo. Maecenas eget ante ipsum.')
+        h2 {{ introduction.fields.name }}
+        h2 {{ introduction.fields.content }}
+        // app-heading(text='introduction.fields.heading')
+        // app-paragraph(text='introduction.fields.content')
         app-button(primary text='Button')
 </template>
 
@@ -14,6 +16,8 @@ import appParagraph from '~/components/app-paragraph'
 import appButton from '~/components/app-button'
 
 export default {
+  name: 'app-introduction',
+  props: ['introduction'],
   components: {
     appHeading,
     appParagraph,

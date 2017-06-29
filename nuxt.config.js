@@ -7,7 +7,7 @@ const config = {
   ** Headers of the page
   */
   head: {
-    title: 'Custom app with Contentful',
+    title: 'Young Coders — Kruti',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -15,10 +15,12 @@ const config = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css' }
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css' },
+      { rel: 'preload', href: './assets/fonts/Montserrat-Regular.otf', as: 'font', type: 'font/otf', crossorigin: '' },
+      { rel: 'preload', href: './assets/fonts/Montserrat-SemiBold.otf', as: 'font', type: 'font/otf', crossorigin: '' }
     ]
   },
-  css: ['tachyons/css/tachyons.css'],
+  css: [ 'tachyons/css/tachyons.css' ],
   /*
   ** Customize the progress-bar color
   */

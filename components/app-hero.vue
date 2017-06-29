@@ -3,12 +3,19 @@
   .hero__overlay.pa
   img(src='https://unsplash.it/1920/1080?random')
   .hero__text.pa
-    h1.f1.b.ttu.white Young Coders
+    app-heading(text='Young Coders' customClass='white')
 </template>
 
 <script>
-export default {
+import appParagraph from '~/components/app-paragraph'
+import appHeading from '~/components/app-heading'
 
+export default {
+  name: 'app-hero',
+  components: {
+    appHeading,
+    appParagraph
+  }
 }
 </script>
 

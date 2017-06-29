@@ -4,7 +4,7 @@ p.lh-copy.f5.f4-ns.mb4.black-70 {{ text }}
 
 <script>
 export default {
-  name: 'app-button',
+  name: 'app-paragraph',
   props: {
     text: { default: 'Paragraph' }
   }

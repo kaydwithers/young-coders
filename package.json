@@ -1,8 +1,8 @@
 {
-  "name": "contentful-blog-in-5-min",
+  "name": "young-coders",
   "version": "1.0.0",
   "description": "A static blog based on Contentful",
-  "author": "stefan judis <stefanjudis@gmail.com>",
+  "author": "kayd withers <kaydwithers@gmail.com>",
   "private": true,
   "dependencies": {
     "contentful": "^4.3.0",

@@ -5,7 +5,6 @@
       <div class="foreground">
         <div class="page-bar wrapper">
           <a href="/" class="person-name">John Doe</a>
-          <Navigation></Navigation>
         </div>
         <div class="page-info wrapper">
           <h2>Blog</h2>
@@ -13,13 +12,13 @@
       </div>
     </header>
 
-    <section class="body-container">
-      <div class="items-bar wrapper">
+    <section class="">
+      <div class="">
         <h2>All articles ({{ posts.length }})</h2>
       </div>
-      <ul class="items-list wrapper">
-        <li class="item" v-for="post in posts">
-          <article-preview :post="post"></article-preview>
+      <ul class="flex">
+        <li class="w-100" v-for="post in posts">
+          <article-preview :post="post" />
         </li>
       </ul>
     </section>
@@ -28,8 +27,7 @@
 </template>
 
 <script>
-import {cdaClient} from '../../plugins/contentful-client.js'
-import Navigation from '~components/navigation.vue'
+import { cdaClient } from '../../plugins/contentful-client.js'
 import ArticlePreview from '~components/article-preview.vue'
 
 export default {
@@ -44,8 +42,7 @@ export default {
     })
   },
   components: {
-    ArticlePreview,
-    Navigation
+    ArticlePreview
   }
 }
 </script>

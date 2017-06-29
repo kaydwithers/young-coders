@@ -1,6 +1,6 @@
 <template lang="pug">
-button.f6.link.dim.pa3.dib.ba.bw1.b--black.ttu(
-  :class="{ 'bg-hot-pink': secondary, 'bg-near-white': primary }"
+button.f6.link.pointer.dim.pa3.dib.ba.bw1.b--black-60.ttu(
+  :class="{ 'bg-hot-pink': secondary, 'bg-transparent': primary }"
   @click='click'
 ) {{ text }}
 </template>

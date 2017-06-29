@@ -1,11 +1,7 @@
 <template>
   <div>
 
-    <app-navigation />
-
-    <app-hero />
-
-    <app-introduction />
+    <app-introduction :introduction="introduction" />
 
     <!-- Homepage header
     <header class="home header">
@@ -43,9 +39,10 @@
     -->
 
     <section class="">
-      <div class="">
+      <div class="ph4">
         <app-heading text="Recent articles" />
       </div>
+
       <ul class="flex">
         <li class="w-100" v-for="post in posts">
           <article-preview :post="post"></article-preview>
@@ -62,11 +59,10 @@
 import {cdaClient} from '../plugins/contentful-client.js'
 import Navigation from '~components/navigation.vue'
 import ArticlePreview from '~components/article-preview.vue'
-import appNavigation from '~/components/app-navigation'
-import appHero from '~/components/app-hero'
+import appHeading from '~/components/app-heading'
 import appIntroduction from '~/components/app-introduction'
+import appParagraph from '~/components/app-paragraph'
 import appButton from '~/components/app-button'
-import appFooter from '~/components/app-footer'
 
 export default {
   asyncData ({ params }) {
@@ -77,6 +73,9 @@ export default {
       cdaClient.getEntries({
         'content_type': process.env.CTF_BLOG_POST_TYPE_ID,
         order: '-sys.createdAt'
+      }),
+      cdaClient.getEntries({
+        'sys.id': process.env.CTF_INTRODUCTION_ID
       })
     ]).then(([entries, posts]) => {
       return {
@@ -88,11 +87,10 @@ export default {
   components: {
     Navigation,
     ArticlePreview,
-    appNavigation,
-    appHero,
+    appHeading,
     appIntroduction,
-    appButton,
-    appFooter
+    appParagraph,
+    appButton
   }
 }
 </script>

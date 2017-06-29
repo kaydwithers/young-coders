@@ -1,7 +1,7 @@
 <template lang="pug">
 footer
   .bg-black
-    .pv4.tc
+    .pv5.tc
       p.f4.white Young Coders is cool
 </template>
 
