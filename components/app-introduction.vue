@@ -3,8 +3,8 @@
   .w-100.pv6.f6.ph3.ph4-ns
     .mw7.center.ph3-ns
       .tc
-        h2 {{ introduction.fields.name }}
-        h2 {{ introduction.fields.content }}
+        app-heading(:text='introduction.fields.heading')
+        app-paragraph(:text='introduction.fields.content')
         app-button(primary text='Button')
 </template>
 
