@@ -75,12 +75,13 @@ export default {
         order: '-sys.createdAt'
       }),
       cdaClient.getEntries({
-        'sys.id': process.env.CTF_INTRODUCTION_ID
+        'content_type': process.env.CTF_INTRODUCTION_ID
       })
-    ]).then(([entries, posts]) => {
+    ]).then(([entries, posts, introduction]) => {
       return {
         person: entries.items[0],
-        posts: posts.items
+        posts: posts.items,
+        introduction: introduction.items[0]
       }
     }).catch(console.error)
   },

@@ -5,8 +5,6 @@
       .tc
         h2 {{ introduction.fields.name }}
         h2 {{ introduction.fields.content }}
-        // app-heading(text='introduction.fields.heading')
-        // app-paragraph(text='introduction.fields.content')
         app-button(primary text='Button')
 </template>
 
