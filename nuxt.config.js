@@ -51,10 +51,10 @@ const config = {
   },
 
   /*
-  ** ᕕ( ᐛ )ᕗ CTF-BLOG-IN-5-MINUTES
+  ** ᕕ( ᐛ )ᕗ CTF-BLOG-IN-5-MINUTESnpm run de
   ** Make client available everywhere via Nuxt plugins
   */
-  plugins: ['~plugins/contentful-client'],
+  plugins: ['~plugins/contentful-client', '~plugins/ga.js'],
 
   /*
   ** ᕕ( ᐛ )ᕗ CTF-BLOG-IN-5-MINUTES

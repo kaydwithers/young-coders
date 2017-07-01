@@ -6,7 +6,7 @@ h2.f2.fw7.lh-title.ttu.mb3(:class='customClass') {{ text }}
 export default {
   name: 'app-heading',
   props: {
-    text: { default: 'Heading' },
+    text: { default: '[PH] Heading' },
     customClass: { default: 'black-70' }
   }
 }

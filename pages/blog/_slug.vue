@@ -5,7 +5,6 @@
       <div class="foreground">
         <div class="page-bar wrapper">
           <a href="/" class="person-name">John Doe</a>
-          <Navigation></Navigation>
         </div>
       </div>
       <div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    <app-hero />
     <app-introduction :introduction="introduction" />
 
     <!-- Homepage header
@@ -60,6 +60,7 @@ import {cdaClient} from '../plugins/contentful-client.js'
 import Navigation from '~components/navigation.vue'
 import ArticlePreview from '~components/article-preview.vue'
 import appHeading from '~/components/app-heading'
+import appHero from '~/components/app-hero'
 import appIntroduction from '~/components/app-introduction'
 import appParagraph from '~/components/app-paragraph'
 import appButton from '~/components/app-button'
@@ -89,6 +90,7 @@ export default {
     Navigation,
     ArticlePreview,
     appHeading,
+    appHero,
     appIntroduction,
     appParagraph,
     appButton

@@ -2,7 +2,6 @@
 div
   main(role='main')
     app-navigation
-    app-hero
     nuxt
     app-footer
 </template>

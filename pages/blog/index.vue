@@ -1,34 +1,21 @@
-<template>
-  <div>
-    <!-- Blog header -->
-    <header class="blog header">
-      <div class="foreground">
-        <div class="page-bar wrapper">
-          <a href="/" class="person-name">John Doe</a>
-        </div>
-        <div class="page-info wrapper">
-          <h2>Blog</h2>
-        </div>
-      </div>
-    </header>
+<template lang="pug">
+.header
+  .w-100.pv6.f6.ph3.ph4-ns
+    .mw7.center.ph3-ns
+      app-heading(size='1' text='Blog')
+      app-paragraph(size='1' :text="'All articles' + ' (' + posts.length + ')'")
 
-    <section class="">
-      <div class="">
-        <h2>All articles ({{ posts.length }})</h2>
-      </div>
-      <ul class="flex">
-        <li class="w-100" v-for="post in posts">
-          <article-preview :post="post" />
-        </li>
-      </ul>
-    </section>
-
-  </div>
+    section
+      ul.flex
+        li.w-100(v-for='post in posts')
+          article-preview(:post="post")
 </template>
 
 <script>
 import { cdaClient } from '../../plugins/contentful-client.js'
 import ArticlePreview from '~components/article-preview.vue'
+import appHeading from '~/components/app-heading'
+import appParagraph from '~/components/app-paragraph'
 
 export default {
   asyncData ({ params }) {
@@ -42,7 +29,9 @@ export default {
     })
   },
   components: {
-    ArticlePreview
+    ArticlePreview,
+    appHeading,
+    appParagraph
   }
 }
 </script>
