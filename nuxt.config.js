@@ -15,9 +15,7 @@ const config = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css' },
-      { rel: 'preload', href: './assets/fonts/Montserrat-Regular.otf', as: 'font', type: 'font/otf', crossorigin: '' },
-      { rel: 'preload', href: './assets/fonts/Montserrat-SemiBold.otf', as: 'font', type: 'font/otf', crossorigin: '' }
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css' }
     ]
   },
   css: [ 'tachyons/css/tachyons.css' ],
@@ -54,7 +52,7 @@ const config = {
   ** ᕕ( ᐛ )ᕗ CTF-BLOG-IN-5-MINUTESnpm run de
   ** Make client available everywhere via Nuxt plugins
   */
-  plugins: ['~plugins/contentful-client', '~plugins/ga.js'],
+  plugins: ['~plugins/contentful-client'],
 
   /*
   ** ᕕ( ᐛ )ᕗ CTF-BLOG-IN-5-MINUTES

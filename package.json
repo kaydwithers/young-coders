@@ -8,6 +8,8 @@
     "contentful": "^4.3.0",
     "contentful-management": "^3.4.0",
     "nuxt": "latest",
+    "styletron": "^2.5.7",
+    "styletron-vue": "^0.1.2",
     "tachyons": "^4.7.4",
     "vue-markdown": "^2.1.3"
   },

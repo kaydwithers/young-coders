@@ -14,8 +14,8 @@
 <script>
 import { cdaClient } from '../../plugins/contentful-client.js'
 import ArticlePreview from '~components/article-preview.vue'
-import appHeading from '~/components/app-heading'
-import appParagraph from '~/components/app-paragraph'
+import appHeading from '~/components/atoms/app-heading'
+import appParagraph from '~/components/atoms/app-paragraph'
 
 export default {
   asyncData ({ params }) {

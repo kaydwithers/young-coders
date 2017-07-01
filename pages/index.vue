@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-hero />
+    <app-hero :hero="hero" />
     <app-introduction :introduction="introduction" />
 
     <!-- Homepage header
@@ -38,9 +38,11 @@
     </header>
     -->
 
-    <section class="">
-      <div class="ph4">
-        <app-heading text="Recent articles" />
+    <app-avatars />
+
+    <section class="pv6">
+      <div class="ph4  tc">
+        <app-heading size="2" text="Latest blog posts" />
       </div>
 
       <ul class="flex">
@@ -56,14 +58,14 @@
 </template>
 
 <script>
-import {cdaClient} from '../plugins/contentful-client.js'
-import Navigation from '~components/navigation.vue'
+import { cdaClient } from '../plugins/contentful-client.js'
 import ArticlePreview from '~components/article-preview.vue'
-import appHeading from '~/components/app-heading'
-import appHero from '~/components/app-hero'
-import appIntroduction from '~/components/app-introduction'
-import appParagraph from '~/components/app-paragraph'
-import appButton from '~/components/app-button'
+import appAvatars from '~/components/organisms/app-avatars'
+import appHeading from '~/components/atoms/app-heading'
+import appHero from '~/components/organisms/app-hero'
+import appIntroduction from '~/components/organisms/app-introduction'
+import appParagraph from '~/components/atoms/app-paragraph'
+import appButton from '~/components/atoms/app-button'
 
 export default {
   asyncData ({ params }) {
@@ -76,19 +78,24 @@ export default {
         order: '-sys.createdAt'
       }),
       cdaClient.getEntries({
+        'content_type': process.env.CTF_HERO_ID,
+        order: '-sys.createdAt'
+      }),
+      cdaClient.getEntries({
         'content_type': process.env.CTF_INTRODUCTION_ID
       })
-    ]).then(([entries, posts, introduction]) => {
+    ]).then(([entries, posts, hero, introduction]) => {
       return {
         person: entries.items[0],
         posts: posts.items,
+        hero: hero.items[0],
         introduction: introduction.items[0]
       }
     }).catch(console.error)
   },
   components: {
-    Navigation,
     ArticlePreview,
+    appAvatars,
     appHeading,
     appHero,
     appIntroduction,
