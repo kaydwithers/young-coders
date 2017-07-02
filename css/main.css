@@ -1,0 +1,67 @@
+
+:root {
+  --blue: #6772e5;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/Montserrat-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  src: url("/Montserrat-SemiBold.ttf");
+  font-display: swap;
+}
+
+html {
+  overflow-y: scroll;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.blue { color: var(--blue); }
+.bg-blue { background-color: var(--blue); }
+
+.grid { display: grid; }
+.grid-repeat-3 { grid: repeat(3, auto) / auto-flow 1fr; }
+.grid-gap-1 { grid-gap: 0 41px; }
+
+a { color: var(--blue); }
+a:hover { color: #45b2e8 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+p, h1, h2, h3, h4, h5, h6 { 
+  margin-top: 0; 
+}
+
+img {
+  max-width: 100%;
+  font-style: italic;
+  vertical-align: middle;
+}
+
+  img[width],
+  img[height] {
+    max-width: none;
+  }
+
+.ts-1 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.lh-2 {
+  line-height: 2;
+}

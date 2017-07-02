@@ -1,7 +1,7 @@
 <template lang="pug">
-.header
-  .w-100.pv6.f6.ph3.ph4-ns
-    .mw7.center.ph3-ns
+.bg-white
+  .mw9.center.ph3.ph5-ns.pv6
+    .w-100
       app-heading(size='1' text='Blog')
       app-paragraph(size='1' :text="'All articles' + ' (' + posts.length + ')'")
 

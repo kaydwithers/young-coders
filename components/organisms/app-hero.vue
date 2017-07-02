@@ -1,5 +1,5 @@
 <template lang="pug">
-.hero.pr(:class="{ 'hero--small': heroSmall }")
+.hero.pr.bg-black(:class="{ 'hero--small': heroSmall }")
   .hero__overlay.pa
   img(
     :src="hero.fields.heroImage.fields.file.url + '?fit=scale&w=350'"
@@ -7,8 +7,8 @@
     sizes="100vw"
   )
   .hero__text.pa.tc
-    app-heading(size='1' :text='hero.fields.heading' customClass='white ttu')
-    app-paragraph(size='1' :text='hero.fields.content' customClass='white')
+    app-heading(size='1' :text='hero.fields.heading' customClass='white ttu ts-1 mb3')
+    app-paragraph(size='2' :text='hero.fields.content' customClass='white ts-1')
     
 </template>
 

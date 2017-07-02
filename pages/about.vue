@@ -2,10 +2,10 @@
 div
   app-hero(:hero="hero" heroSmall)
   .bg-white
-    .w-100.pv6.f6.ph3.ph4-ns
-      .mw7.center.ph3-ns
-        app-heading(size='1' :text='page.fields.heading')
-        app-paragraph(size='1' :text='page.fields.content')
+    .mw9.center.ph3.ph5-ns.pv6
+      .w-100
+        app-heading(size='2' :text='page.fields.heading')
+        app-paragraph(size='3' :text='page.fields.content')
 </template>
 
 <script>

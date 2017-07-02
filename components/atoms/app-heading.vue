@@ -1,20 +1,20 @@
 <template lang="pug">
-h1.f1.lh-title.mb4(v-if="size === '1'" :class="customClass")
+h1.f2.f1-ns.lh-title.mb4(v-if="size === '1'" :class="customClass")
   vue-markdown(v-html='text')
 
-h2.f2.lh-title.mb4(v-else-if="size === '2'" :class="customClass")
+h2.f3.f2-ns.lh-title.mb4(v-else-if="size === '2'" :class="customClass")
   vue-markdown(v-html='text')
 
-h3.f3.lh-title.mb4(v-else-if="size === '3'" :class="customClass")
+h3.f4.f3-ns.lh-title.mb4(v-else-if="size === '3'" :class="customClass")
   vue-markdown(v-html='text')
 
-h4.f4.lh-title.mb4(v-else-if="size === '4'" :class="customClass")
+h4.f5.f4-ns.lh-title.mb4(v-else-if="size === '4'" :class="customClass")
   vue-markdown(v-html='text')
 
-h5.f5.lh-title.mb4(v-else-if="size === '5'" :class="customClass")
+h5.f6.f5-ns.lh-title.mb4(v-else-if="size === '5'" :class="customClass")
   vue-markdown(v-html='text')
 
-h6.f6.lh-title.mb4(v-else-if="size === '6'" :class="customClass")
+h6.f6.f6-ns.lh-title.mb4(v-else-if="size === '6'" :class="customClass")
   vue-markdown(v-html='text')
 </template>
 

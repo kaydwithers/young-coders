@@ -1,6 +1,7 @@
 const ctfConfig = require('./plugins/contentful-client').config
 const cdaClient = require('./plugins/contentful-client').cdaClient
 const cmaClient = require('./plugins/contentful-client').cmaClient
+const { join } = require('path')
 
 const config = {
   /*
@@ -14,11 +15,13 @@ const config = {
       { hid: 'description', name: 'description', content: 'Custom app in under 5 minutes' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
-  css: [ 'tachyons/css/tachyons.css' ],
+  css: [ 
+    'tachyons/css/tachyons.css',
+    join(__dirname, 'css/main.css')
+  ],
   /*
   ** Customize the progress-bar color
   */
@@ -27,6 +30,7 @@ const config = {
   ** Build configuration
   */
   build: {
+    extractCSS: true,
     /*
     ** Run ESLINT on save
     */
