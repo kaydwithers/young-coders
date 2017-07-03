@@ -6,6 +6,8 @@ div
       .w-100
         app-heading(size='2' :text='page.fields.heading')
         app-paragraph(size='3' :text='page.fields.content')
+
+  // app-test
 </template>
 
 <script>
@@ -13,6 +15,7 @@ import { cdaClient } from '~/plugins/contentful-client.js'
 import appHeading from '~/components/atoms/app-heading'
 import appHero from '~/components/organisms/app-hero'
 import appParagraph from '~/components/atoms/app-paragraph'
+import appTest from '~/components/app-test'
 
 export default {
   name: 'about',
@@ -35,7 +38,8 @@ export default {
   components: {
     appHeading,
     appHero,
-    appParagraph
+    appParagraph,
+    appTest
   }
 }
 </script>
