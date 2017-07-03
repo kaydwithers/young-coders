@@ -1,20 +1,20 @@
 <template lang="pug">
-h1.f2.f1-ns.lh-title.mb4(v-if="size === '1'" :class="customClass")
+h1.f2.f1-ns.lh-title(v-if="size === '1'" :class="customClass")
   vue-markdown(v-html='text')
 
-h2.f3.f2-ns.lh-title.mb4(v-else-if="size === '2'" :class="customClass")
+h2.f3.f2-ns.lh-title(v-else-if="size === '2'" :class="customClass")
   vue-markdown(v-html='text')
 
-h3.f4.f3-ns.lh-title.mb4(v-else-if="size === '3'" :class="customClass")
+h3.f4.f3-ns.lh-title(v-else-if="size === '3'" :class="customClass")
   vue-markdown(v-html='text')
 
-h4.f5.f4-ns.lh-title.mb4(v-else-if="size === '4'" :class="customClass")
+h4.f5.f4-ns.lh-title(v-else-if="size === '4'" :class="customClass")
   vue-markdown(v-html='text')
 
-h5.f6.f5-ns.lh-title.mb4(v-else-if="size === '5'" :class="customClass")
+h5.f6.f5-ns.lh-title(v-else-if="size === '5'" :class="customClass")
   vue-markdown(v-html='text')
 
-h6.f6.f6-ns.lh-title.mb4(v-else-if="size === '6'" :class="customClass")
+h6.f6.f6-ns.lh-title(v-else-if="size === '6'" :class="customClass")
   vue-markdown(v-html='text')
 </template>
 
@@ -25,7 +25,7 @@ export default {
   name: 'app-heading',
   props: {
     text: { default: '[PH] Heading' },
-    customClass: { default: 'black-70' },
+    customClass: { default: 'black-70 mb4' },
     size: { default: '1' }
   },
   components: {

@@ -1,6 +1,8 @@
 
 :root {
-  --blue: #6772e5;
+  --app-gray: #d9d9d9;
+  --app-blue-light: #9bbfe1;
+  --app-blue-dark: #3281c4;
 }
 
 @font-face {
@@ -29,14 +31,19 @@ body {
   font-weight: 400;
 }
 
-.blue { color: var(--blue); }
-.bg-blue { background-color: var(--blue); }
+.app-gray       { color: var(--app-gray); }
+.app-blue-dark  { color: var(--app-blue-dark); }
+.app-blue-light { color: var(--app-blue-light); }
+
+.bg-app-gray       { background-color: var(--app-gray); }
+.bg-app-blue-dark  { background-color: var(--app-blue-dark); }
+.bg-app-blue-light { background-color: var(--app-blue-light); }
 
 .grid { display: grid; }
 .grid-repeat-3 { grid: repeat(3, auto) / auto-flow 1fr; }
 .grid-gap-1 { grid-gap: 0 41px; }
 
-a { color: var(--blue); }
+a { color: var(--app-blue-dark); }
 a:hover { color: #45b2e8 }
 
 h1, h2, h3, h4, h5, h6 {

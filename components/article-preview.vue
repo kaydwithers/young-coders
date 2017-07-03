@@ -8,11 +8,11 @@ article.ph4
 
   app-paragraph(size='6' :text='( new Date(post.fields.publishDate)).toDateString()')
 
-  nuxt-link.db.f3.fw6.mb4.link.black-70(
+  nuxt-link.db.f3.lh-copy.fw6.mb4.link.black-70(
     :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}"
   ) {{ post.fields.title }}
 
-  app-paragraph(size='4' :text='post.fields.description')
+  app-paragraph(size='5' :text='post.fields.description')
 
   nuxt-link(
     v-for='tag in post.fields.tags'

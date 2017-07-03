@@ -2,7 +2,7 @@
 .bg-white
   .mw8.center.pv6.ph3.ph4-ns.tc
     app-heading(size='2' :text='introduction.fields.heading')
-    app-paragraph(size='3' :text='introduction.fields.content')
+    app-paragraph(size='4' :text='introduction.fields.content')
     app-button(primary text='Button')
 </template>
 

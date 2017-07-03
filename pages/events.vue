@@ -5,7 +5,7 @@ div
     .mw9.center.ph3.ph5-ns.pv6
       .w-100
         app-heading(size='2' :text='page.fields.heading')
-        app-paragraph(size='3' :text='page.fields.content')
+        app-paragraph(size='4' :text='page.fields.content')
 </template>
 
 <script>
@@ -19,7 +19,8 @@ export default {
   asyncData ({ params }) {
     return Promise.all([
       cdaClient.getEntries({
-        'content_type': process.env.CTF_PAGE_ID
+        'content_type': process.env.CTF_PAGE_ID,
+        order: '-sys.createdAt'
       }),
       cdaClient.getEntries({
         'content_type': process.env.CTF_HERO_ID,
@@ -28,7 +29,7 @@ export default {
     ]).then(([page, hero]) => {
       return {
         hero: hero.items[0],
-        page: page.items[1]
+        page: page.items[0]
       }
     }).catch(console.error)
   },
