@@ -38,6 +38,8 @@ body {
 .bg-app-gray       { background-color: var(--app-gray); }
 .bg-app-blue-dark  { background-color: var(--app-blue-dark); }
 .bg-app-blue-light { background-color: var(--app-blue-light); }
+.bg-lg-gray        { background: linear-gradient(to bottom,#fff 10%,#f4f5f5 100%); }
+.bg-lg-pink        { background: linear-gradient(135deg,#f783a7 10%,#C74FBA 100%); }
 
 .grid { display: grid; }
 .grid-repeat-3 { grid: repeat(3, auto) / auto-flow 1fr; }
@@ -66,7 +68,7 @@ img {
   }
 
 .ts-1 {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
 .lh-2 {

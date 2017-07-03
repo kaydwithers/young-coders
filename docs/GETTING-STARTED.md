@@ -8,6 +8,7 @@ To get you started you have to be registered at [Contentful](https://www.content
 $ git clone git@github.com:contentful/blog-in-5-minutes.git
 
 $ npm install
+$ yarn add styletron styletron-vue
 ```
 
 ## Get needed config data from Contentful

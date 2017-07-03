@@ -4,7 +4,7 @@ div
     .mw9.center.ph3.ph4-ns.pv4
       .flex.justify-between.items-center.fw6
         div
-          nuxt-link.link.pa2.ttu.pointer.black.b.f5.f4-ns.dib.mr4(exact to='/' title='Home') Young Coders
+          nuxt-link.link.pa2.pointer.black.b.f5.f4-ns.dib.mr4(exact to='/' title='Home') Young Coders
 
         div.dn.db-ns
           nuxt-link.link.pa2.pointer.gray.f7.f6-ns.dib.mr4(to='/about' title='About') About

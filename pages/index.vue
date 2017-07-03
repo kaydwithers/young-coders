@@ -37,14 +37,17 @@ div
   //   </div>
   // </header>
 
+  app-process
+
   app-avatars
 
-  section.mw9.center.ph3.ph5-ns.pv6
-    app-heading.tc(size='2' text='Latest blog posts')
+  section.bg-black-05
+    .mw9.center.ph3.ph5-ns.pv6
+      app-heading.tc(size='2' text='Latest blog posts')
 
-    .flex
-      .w-100.w-third-ns(v-for='post in posts')
-        article-preview(:post="post")
+      .flex
+        .w-100.w-third-ns(v-for='post in posts')
+          article-preview(:post="post")
 
   app-footer
 </template>
@@ -57,6 +60,7 @@ import appHeading from '~/components/atoms/app-heading'
 import appHero from '~/components/organisms/app-hero'
 import appIntroduction from '~/components/organisms/app-introduction'
 import appParagraph from '~/components/atoms/app-paragraph'
+import appProcess from '~/components/organisms/app-process'
 import appButton from '~/components/atoms/app-button'
 
 export default {
@@ -92,6 +96,7 @@ export default {
     appHero,
     appIntroduction,
     appParagraph,
+    appProcess,
     appButton
   }
 }

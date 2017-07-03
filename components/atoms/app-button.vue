@@ -1,5 +1,5 @@
 <template lang="pug">
-button.f6.pointer.pa3.b0.fw6.dib.bn.br3.ttu.white(
+button.f4.pointer.pa3.b0.dib.bn.br3.white(
   :class="{ 'bg-hot-pink': secondary, 'bg-blue': primary }"
   @click='click'
 ) {{ text }}
@@ -20,6 +20,7 @@ export default {
 <style>
 button {
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  font-family: inherit;
   transition: all .15s ease;
 }
 
