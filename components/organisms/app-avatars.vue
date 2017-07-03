@@ -1,5 +1,5 @@
 <template lang="pug">
-.bg-app-gray
+.bg-white
   .mw9.center.ph3.ph5-ns.pv6
     .tc
       app-heading(size='2' text='The team')

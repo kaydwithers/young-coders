@@ -9,7 +9,7 @@
   .hero__text.pa.tc
     app-heading(size='1' :text='hero.fields.heading' customClass='white ts-1 mb2')
     app-paragraph(size='4' :text='hero.fields.content' customClass='white ts-1')
-  .hero__arrow.pa.tc
+  .hero__arrow.pa.tc.ts-1
     a(href='#just-after-video' v-scroll-to="{ el: '#portfolio', duration: 500, easing: 'ease' }")
       svg(xmlns:xlink='http://www.w3.org/1999/xlink' preserveAspectRatio='xMidYMid' width='77' height='51' viewBox='0 0 77 51')
         g
@@ -64,7 +64,7 @@ export default {
 }
 
   .hero--small {
-    height: 50vh;
+    height: 60vh;
   }
 
   .hero img {

@@ -1,8 +1,8 @@
 <template lang="pug">
 footer
-  .bg-black-70
+  .bg-black-80
     .pv5.tc
-      p.f4.fw6.white Young Coders is cool
+      p.f4.fw6.white.mb0 Young Coders is cool
 </template>
 
 <script>
