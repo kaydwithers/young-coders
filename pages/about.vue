@@ -1,8 +1,8 @@
 <template lang="pug">
 div
-  app-hero(:hero="hero" heroSmall)
+  app-hero(:hero='hero' text='About us' heroSmall)
   .bg-white
-    .mw9.center.ph3.ph5-ns.pv6
+    .mw9.center.ph3.ph4-ns.pv6
       .w-100
         app-heading(size='2' :text='page.fields.heading')
         app-paragraph(size='4' :text='page.fields.content')
@@ -32,7 +32,7 @@ export default {
     ]).then(([page, hero]) => {
       return {
         hero: hero.items[0],
-        page: page.items[2]
+        page: page.items[3]
       }
     }).catch(console.error)
   },

@@ -2,7 +2,7 @@
 :root {
   --app-gray: #d9d9d9;
   --app-blue-light: #9bbfe1;
-  --app-blue-dark: #3281c4;
+  --app-blue-dark: #249fda;
 }
 
 @font-face {
@@ -38,15 +38,28 @@ body {
 .bg-app-gray       { background-color: var(--app-gray); }
 .bg-app-blue-dark  { background-color: var(--app-blue-dark); }
 .bg-app-blue-light { background-color: var(--app-blue-light); }
+.bg-lg-blue        { background: linear-gradient(90deg,#0dc5eb 10%,#0697E1 100%); }
 .bg-lg-gray        { background: linear-gradient(to bottom,#fff 10%,#f4f5f5 100%); }
+.bg-lg-green       { background: linear-gradient(to right,#00cfa4,#008b6f); }
 .bg-lg-pink        { background: linear-gradient(135deg,#f783a7 10%,#C74FBA 100%); }
+.bg-lg-purple      { background: linear-gradient(135deg,#80489a 10%,#533163 100%); }
 
 .grid { display: grid; }
 .grid-repeat-3 { grid: repeat(3, auto) / auto-flow 1fr; }
 .grid-gap-1 { grid-gap: 0 41px; }
 
-a { color: var(--app-blue-dark); }
-a:hover { color: #45b2e8 }
+a { 
+  color: var(--app-blue-dark);
+  outline: none;
+}
+
+  a:hover { 
+    color: #45b2e8;
+  }
+
+  .link:focus {
+    outline: none;
+  }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
@@ -67,8 +80,24 @@ img {
     max-width: none;
   }
 
+.page-enter-active, .page-leave-active {
+  transition: opacity .2s;
+}
+
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
+.app-f1 { 
+  font-size: 50px; 
+}
+
 .ts-1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.lh-1-5 {
+  line-height: 1.5;
 }
 
 .lh-2 {

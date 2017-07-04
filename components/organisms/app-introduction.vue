@@ -1,9 +1,9 @@
 <template lang="pug">
 .bg-white
-  .mw8.center.pv6.ph3.ph4-ns.tc
+  .mw8.center.pv5.pv6-ns.ph3.ph4-ns.tc
     app-heading(size='2' :text='introduction.fields.heading')
     app-paragraph(size='4' :text='introduction.fields.content')
-    app-button(primary text='Button')
+    app-button(primary text='Email us')
 </template>
 
 <script>

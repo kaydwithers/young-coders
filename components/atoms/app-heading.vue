@@ -1,5 +1,5 @@
 <template lang="pug">
-h1.f2.f1-ns.lh-title(v-if="size === '1'" :class="customClass")
+h1.f2.f1-ns.lh-1-5(v-if="size === '1'" :class="customClass")
   vue-markdown(v-html='text')
 
 h2.f3.f2-ns.lh-title(v-else-if="size === '2'" :class="customClass")

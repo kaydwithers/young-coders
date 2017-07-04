@@ -1,51 +1,44 @@
 <template lang="pug">
 div
-  app-hero(:hero="hero" heroSmall)
-  head
-    style.
-      input[type=text], select, textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      resize: vertical;
-      }
-      input[type=submit] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      }
-      input[type=submit]:hover {
-      background-color: #45a049;
-      }
-      .container {
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 20px;
-      }
-  body
-    .bg-white
-      .mw9.center.ph3.ph5-ns.pv6
-        .w-100
+  app-hero(:hero='hero' text='Contact us' heroSmall)
+  .bg-white
+    .mw9.center.ph3.ph4-ns.pv6
+      .w-100
         app-heading(size='2' :text='page.fields.heading')
         app-paragraph(size='4' :text='page.fields.content')
-        .container
-            form(action='/action_page.php')
-              label(for='fname') First Name
-              input#fname(type='text', name='firstname', placeholder='Your name..')
-              label(for='lname') Last Name
-              input#lname(type='text', name='lastname', placeholder='Your last name..')
-              label(for='email') Email*
-              input#email(type='text', name='email', placeholder='Your Email Id..')
-              label(for='subject') Subject
-              textarea#subject(name='subject', placeholder='Write something..', style='height:200px')
-              input(type='submit', value='Submit')
+
+        form.black-80(action='/action_page.php')
+          .measure
+            .mb4
+              label.f6.b.db.mb2(for='fname') First Name
+              input#fname.input-reset.ba.b--black-20.pa3.db.w-100(
+                type='text', name='firstname', placeholder='Your first name'
+              )
+
+            .mb4
+              label.f6.b.db.mb2(for='lname') Last Name
+              input#lname.input-reset.ba.b--black-20.pa3.db.w-100(
+                type='text', name='lastname', placeholder='Your last name'
+              )
+
+            .mb4
+              label.f6.b.db.mb2(for='email') Email*
+              input#email.input-reset.ba.b--black-20.pa3.db.w-100(
+                type='text', name='email', placeholder='Your email'
+              )
+              small.f6.black-60.db.mt3(id='name-desc') Helper text for the form control.
+
+            .mb4
+              label.f6.b.db.mb2(for='subject') Subject 
+                span.normal.black-60 (optional)
+              textarea#subject.input-reset.ba.b--black-20.pa3.db.w-100.h4(
+                name='subject', placeholder='Your message'
+              )
+
+            input.f4.pointer.pa3.b0.dib.bn.br3.white.bg-blue(type='submit', value='Submit')
+
+  </div>
+</form>
 </template>
 
 <script>
@@ -69,7 +62,7 @@ export default {
     ]).then(([page, hero]) => {
       return {
         hero: hero.items[0],
-        page: page.items[1]
+        page: page.items[2]
       }
     }).catch(console.error)
   },

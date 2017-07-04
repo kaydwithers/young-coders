@@ -1,23 +1,23 @@
 <template lang="pug">
 .bg-white
-  .mw9.center.ph3.ph5-ns.pv6
+  .mw9.center.ph3.ph4-ns.pv5.pv6-ns
     .tc
       app-heading(size='2' text='The team')
 
-    .flex
-      .w100.w-25-ns.ph4.tc
+    .db.flex-ns
+      .w-100.w-25-ns.ph4.tc
         img.db.ba.br-100.bw3.b--black-20.mb4(src='https://unsplash.it/400/400')
         app-paragraph(size='5' text='Kruti')
 
-      .w100.w-25-ns.ph4.tc
+      .w-100.w-25-ns.ph4.tc
         img.ba.br-100.bw3.b--black-20.mb4(src='https://unsplash.it/400/400')
         app-paragraph(size='5' text='Herbert')
 
-      .w100.w-25-ns.ph4.tc
+      .w-100.w-25-ns.ph4.tc
         img.ba.br-100.bw3.b--black-20.mb4(src='https://unsplash.it/400/400')
         app-paragraph(size='5' text='Sally')
 
-      .w100.w-25-ns.ph4.tc
+      .w-100.w-25-ns.ph4.tc
         img.ba.br-100.bw3.b--black-20.mb4(src='https://unsplash.it/400/400')
         app-paragraph(size='5' text='Fred')
 </template>

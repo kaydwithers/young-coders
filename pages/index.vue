@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  app-hero(:hero='hero')
+  app-hero(:hero='hero' text='The Coding Workshop <br />for Kids')
   app-introduction(:introduction='introduction')
 
   // Homepage header
@@ -41,11 +41,11 @@ div
 
   app-avatars
 
-  section.bg-black-05
-    .mw9.center.ph3.ph5-ns.pv6
-      app-heading.tc(size='2' text='Latest blog posts')
+  section.bg-lg-purple
+    .mw9.center.ph3.ph4-ns.pv5.pv6-ns
+      app-heading.tc(size='2' text='Latest blog posts' customClass='white')
 
-      .flex
+      .db.flex-ns
         .w-100.w-third-ns(v-for='post in posts')
           article-preview(:post="post")
 
