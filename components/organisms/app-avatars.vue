@@ -6,19 +6,19 @@
 
     .db.flex-ns
       .w-100.w-25-ns.ph4.tc
-        img.db.ba.br-100.bw3.b--black-20.mb4(src='http://lorempixel.com/400/400/people?random')
+        img.db.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-1_swz7b2.jpg')
         app-paragraph(size='5' text='Kruti')
 
       .w-100.w-25-ns.ph4.tc
-        img.ba.br-100.bw3.b--black-20.mb4(src='http://lorempixel.com/400/400/people?random')
+        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-4_ehwbbi.jpg')
         app-paragraph(size='5' text='Herbert')
 
       .w-100.w-25-ns.ph4.tc
-        img.ba.br-100.bw3.b--black-20.mb4(src='http://lorempixel.com/400/400/people?random')
+        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-5_dwk7t8.jpg')
         app-paragraph(size='5' text='Sally')
 
       .w-100.w-25-ns.ph4.tc
-        img.ba.br-100.bw3.b--black-20.mb4(src='http://lorempixel.com/400/400/people?random')
+        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-2_j5lg7c.jpg')
         app-paragraph(size='5' text='Fred')
 </template>
 
