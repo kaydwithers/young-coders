@@ -7,7 +7,7 @@ div
         app-heading(size='2' :text='page.fields.heading')
         app-paragraph(size='4' :text='page.fields.content')
 
-        form.black-80(name='contact', action='thank-you', netlify='' netlify-honeypot="Iso2017")
+        form.black-80(name='contact', action='thank-you', netlify='')
           .measure
             .mb4
               label.f6.b.db.mb2(for='fname') First Name
@@ -20,11 +20,6 @@ div
               input#lname.input-reset.ba.b--black-20.pa3.db.w-100(
                 type='text', name='lastname', placeholder='Your last name'
               )
-
-            p.hidden
-            label
-              | Bot field: 
-              input(name='Iso2017') 
 
             .mb4
               label.f6.b.db.mb2(for='email') Email*
