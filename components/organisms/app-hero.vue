@@ -64,7 +64,7 @@ export default {
 }
 
 .hero {
-  height: 100vh;
+  height: 80vh;
 }
 
   .hero--small {

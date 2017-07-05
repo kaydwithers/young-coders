@@ -1,6 +1,6 @@
 <template lang="pug">
 nav.nav-expand
-  .mw9.center.ph3.ph4-ns
+  .ph3.ph5-ns
     .flex.justify-between.items-center
       div
         nuxt-link.link.pa2.pointer.fw6.b.f5.f4-ns.dib.mr4(exact to='/' title='Home') Young Coders
@@ -36,7 +36,20 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
+nav {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: background .5s ease-in-out, padding .5s ease-in-out;
+  z-index: 1;
+}
+
+  nav a:hover {
+    color: var(--app-blue-dark);
+  }
+
 .nav-expand {
   color: white;
   padding-top: 3rem;
@@ -50,7 +63,7 @@ export default {
 .nav-shrink {
   background-color: #ffffff;
   border-bottom-style: solid;
-  border-color: rgba( 0, 0, 0, .1 );
+  border-color: rgba( 0, 0, 0, .05 );
   border-width: .125rem;
   color: black;
   padding-top: .5rem;
@@ -60,17 +73,4 @@ export default {
   .nav-shrink a {
     color: black;
   }
-
-nav {
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  transition: background .5s ease-in-out, padding .5s ease-in-out;
-  z-index: 1;
-}
-
-.link:hover {
-  color: var(--app-blue-dark);
-}
 </style>

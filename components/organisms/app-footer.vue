@@ -2,7 +2,7 @@
 footer
   .bg-black-80
     .pv4.pv6-ns.tc
-      p.f4.fw6.white.mb0 Young Coders 2017
+      p.f6.f5-ns.white-50.mb0 Young Coders 2017
 </template>
 
 <script>
