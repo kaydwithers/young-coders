@@ -7,7 +7,7 @@ div
         app-heading(size='2' :text='page.fields.heading')
         app-paragraph(size='4' :text='page.fields.content')
 
-        form.black-80(name='contact', action='thank-you', netlify='')
+        form.black-80(name='contact', action='thank-you', netlify='' netlify-honeypot="Iso2017")
           .measure
             .mb4
               label.f6.b.db.mb2(for='fname') First Name
