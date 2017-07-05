@@ -21,6 +21,11 @@ div
                 type='text', name='lastname', placeholder='Your last name'
               )
 
+            p.hidden
+            label
+              | Bot field: 
+              input(name='Iso2017') 
+
             .mb4
               label.f6.b.db.mb2(for='email') Email*
               input#email.input-reset.ba.b--black-20.pa3.db.w-100(
