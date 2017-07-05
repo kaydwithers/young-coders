@@ -3,6 +3,8 @@
   --app-gray: #d9d9d9;
   --app-blue-light: #9bbfe1;
   --app-blue-dark: #249fda;
+
+  --text-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
 @font-face {
@@ -93,7 +95,7 @@ img {
 }
 
 .ts-1 {
-  text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  text-shadow: var(--text-shadow);
 }
 
 .lh-1-5 {

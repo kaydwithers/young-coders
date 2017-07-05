@@ -12,7 +12,7 @@ const config = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Custom app in under 5 minutes' }
+      { hid: 'description', name: 'description', content: 'The Coding Workshiop for kids' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
