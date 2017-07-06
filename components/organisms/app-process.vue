@@ -19,11 +19,29 @@
 </template>
 
 <script>
+import { cdaClient } from '~/plugins/contentful-client.js'
 import appHeading from '~/components/atoms/app-heading'
 import appParagraph from '~/components/atoms/app-paragraph'
 
 export default {
-  name: 'app-footer',
+  name: 'about',
+  asyncData ({ params }) {
+    return Promise.all([
+      cdaClient.getEntries({
+        'content_type': process.env.CTF_PAGE_ID,
+        order: '-sys.createdAt'
+      }),
+      cdaClient.getEntries({
+        'content_type': process.env.CTF_HERO_ID,
+        order: '-sys.createdAt'
+      })
+    ]).then(([page, hero]) => {
+      return {
+        hero: hero.items[0],
+        page: page.items[2]
+      }
+    }).catch(console.error)
+  },
   components: {
     appHeading,
     appParagraph
