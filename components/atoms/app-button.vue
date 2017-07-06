@@ -1,5 +1,5 @@
 <template lang="pug">
-button.f4.pointer.pa3.b0.dib.bn.br3.white(
+button.f5.f4-ns.pointer.pa3.b0.dib.bn.br3.white(
   :class="{ 'bg-hot-pink': secondary, 'bg-blue': primary }"
   @click='click'
 ) {{ text }}

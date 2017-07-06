@@ -1,15 +1,12 @@
 <template lang="pug">
 div
-  app-hero(:hero='hero' text='Contact us' heroSmall)
+  app-hero(:hero='hero' text='Thank you' heroSmall)
   .bg-white
     .mw9.center.ph3.ph4-ns.pv6
       .w-100
-         form.black-80(name='thanks')
-          .measure
-            .mb4
-              label.f6.b.db.mb2(for='fname') Thank you for contacting us. We will get back to you soon.
-  </div>
-</form>
+        form(name='thanks')
+          app-heading(size='2' text='Thank you for contacting us. We will get back to you soon.')
+
 </template>
 
 <script>

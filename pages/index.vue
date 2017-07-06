@@ -41,7 +41,7 @@ div
 
   app-avatars
 
-  section.bg-lg-purple
+  section.bg-lg-cyan
     .mw9.center.ph3.ph4-ns.pv5.pv6-ns
       app-heading.tc(size='2' text='Latest blog posts' customClass='white')
 
