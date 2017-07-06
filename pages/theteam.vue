@@ -3,7 +3,9 @@ div
   app-hero(:hero='hero' text='The Team' heroSmall)
   .bg-white 
   .mw9.center.ph3.ph4-ns.pv5.pv6-ns 
-    app-avatars
+    .w-100 
+      app-avatars
+     
   </div>
 </form>
 </template>

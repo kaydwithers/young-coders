@@ -38,7 +38,7 @@ div
   // </header>
 
   app-process
-  
+  app-events
   section.bg-lg-cyan
     .mw9.center.ph3.ph4-ns.pv5.pv6-ns
       app-heading.tc(size='2' text='Latest blog posts' customClass='white')
@@ -60,6 +60,7 @@ import appIntroduction from '~/components/organisms/app-introduction'
 import appParagraph from '~/components/atoms/app-paragraph'
 import appProcess from '~/components/organisms/app-process'
 import appButton from '~/components/atoms/app-button'
+import appEvents from '~/components/organisms/app-events'
 
 export default {
   asyncData ({ params }) {
@@ -95,7 +96,8 @@ export default {
     appIntroduction,
     appParagraph,
     appProcess,
-    appButton
+    appButton,
+    appEvents
   }
 }
 </script>

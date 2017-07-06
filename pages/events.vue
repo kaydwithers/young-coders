@@ -4,8 +4,7 @@ div
   .bg-white
     .mw9.center.ph3.ph4-ns.pv6
       .w-100
-        app-heading(size='2' :text='page.fields.heading')
-        app-paragraph(size='4' :text='page.fields.content')
+        app-events
 </template>
 
 <script>
@@ -13,6 +12,7 @@ import { cdaClient } from '~/plugins/contentful-client.js'
 import appHero from '~/components/organisms/app-hero'
 import appHeading from '~/components/atoms/app-heading'
 import appParagraph from '~/components/atoms/app-paragraph'
+import appEvents from '~/components/organisms/app-events'
 
 export default {
   name: 'events',
@@ -36,7 +36,8 @@ export default {
   components: {
     appHero,
     appHeading,
-    appParagraph
+    appParagraph,
+    appEvents
   }
 }
 </script>
