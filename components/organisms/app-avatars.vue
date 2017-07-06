@@ -1,8 +1,8 @@
 <template lang="pug">
 .bg-white
   .mw9.center.ph3.ph4-ns.pv5.pv6-ns
-    .tc
-      app-heading(size='2' text='The team')
+    //.tc
+      //app-heading(size='2' text='The team')
     .db.flex-ns
       .w-100.w-25-ns.ph4.tc
         img.db.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-1_swz7b2.jpg')

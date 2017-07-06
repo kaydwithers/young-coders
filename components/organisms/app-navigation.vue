@@ -3,7 +3,7 @@ nav.nav-expand
   .ph3.ph5-ns
     .flex.justify-between.items-center
       div
-        nuxt-link.link.pa2.pointer.fw6.b.f5.f4-ns.dib.mr4(exact to='/' title='Home') Young Coders
+        nuxt-link.link.pa2.pointer.fw6.b.f5.f4-ns.dib.mr4(exact to='/' title='Home') ("Young Coders")
 
       div.dn.db-ns
         nuxt-link.link.pa2.pointer.f6.f5-ns.dib.mr4(to='/about' title='About') About
