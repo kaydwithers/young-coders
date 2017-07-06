@@ -8,6 +8,7 @@ nav.nav-expand
       div.dn.db-ns
         nuxt-link.link.pa2.pointer.f6.f5-ns.dib.mr4(to='/about' title='About') About
         nuxt-link.link.pa2.pointer.f6.f5-ns.dib.mr4(to='/events' title='Events') Events
+        nuxt-link.link.pa2.pointer.f6.f5-ns.dib.mr4(to='/theteam' title='The Team') The Team
         nuxt-link.link.pa2.pointer.f6.f5-ns.dib.mr4(to='/blog' title='Blog') Blog
         nuxt-link.link.pa2.pointer.f6.f5-ns.dib(to='/contact' title='Contact') Contact
 
