@@ -7,8 +7,8 @@
     .db.flex-ns.tc-ns
       .w-100.w-25-ns.ph4-ns
         img(
-          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499387122/Young%20Coders/how_it_works_01.png' 
-          alt='Step1'
+          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499397893/Young%20Coders/how_it_works_01.png' 
+          alt=''
         )
         app-paragraph(
           size='4' 
@@ -18,8 +18,8 @@
 
       .w-100.w-25-ns.ph4-ns
         img(
-          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499387122/Young%20Coders/how_it_works_02.png'
-          alt='Step2'
+          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499397893/Young%20Coders/how_it_works_02.png'
+          alt=''
         )
 
         app-paragraph(
@@ -30,8 +30,8 @@
 
       .w-100.w-25-ns.ph4-ns
         img(
-          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499387121/Young%20Coders/how_it_works_03.png' 
-          alt='Step3'
+          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499397893/Young%20Coders/how_it_works_03.png' 
+          alt=''
         )
         app-paragraph(
           size='4' 
@@ -41,8 +41,8 @@
 
       .w-100.w-25-ns.ph4-ns
         img(
-          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499387121/Young%20Coders/how_it_works_04.png' 
-          alt='Step4' 
+          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499397893/Young%20Coders/how_it_works_04.png' 
+          alt='' 
         )
         app-paragraph(
           size='4' 
