@@ -34,15 +34,15 @@
         app-paragraph(size='5', text='Dolly Desai' custom-class='black-50 mb0')
         app-paragraph(size='6', text='Event Organizer')
 
-      //- .w-100.w-25-ns.ph4.tc
-      //-   img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-2_j5lg7c.jpg')
-      //-   app-paragraph(size='5', text='Raffi Martins')
-      //-   app-paragraph(size='6', text='Art Director')
+      .w-100.w-25-ns.ph4.tc
+        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-4_ehwbbi.jpg')
+        app-paragraph(size='5', text='Raffi Martins')
+        app-paragraph(size='6', text='Art Director')
 
-      //- .w-100.w-25-ns.ph4.tc
-      //-   img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-4_ehwbbi.jpg')
-      //-   app-paragraph(size='5', text='Kayd Withers')
-      //-   app-paragraph(size='6', text='Web Developer')
+      .w-100.w-25-ns.ph4.tc
+        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-4_ehwbbi.jpg')
+        app-paragraph(size='5', text='Kayd Withers')
+        app-paragraph(size='6', text='Web Developer')
     
     //- .tc
     //- app-heading(size='2' text='Board Of Directors')
