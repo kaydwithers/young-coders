@@ -7,36 +7,36 @@ div
         app-heading(size='2' :text='page.fields.heading')
         app-paragraph(size='4' :text='page.fields.content' custom-class='mb5 black-50')
 
-        form.black-50(name='contact', action='thankyou', netlify='')
-          .measure
-            .mb4
-              label.f4.db.mb3(for='fname') First Name
-              input#fname.input-reset.ba.b--black-20.pa3.db.w-100(
-                type='text', name='firstname', placeholder='Your first name'
-              )
-
-            .mb4
-              label.f4.db.mb3(for='lname') Last Name
-              input#lname.input-reset.ba.b--black-20.pa3.db.w-100(
-                type='text', name='lastname', placeholder='Your last name'
-              )
-
-            .mb4
-              label.f4.db.mb3(for='email') Email*
-              input#email.input-reset.ba.b--black-20.pa3.db.w-100(
-                type='text', name='email', placeholder='Your email'
-              )
-              small.f6.black-60.db.mt3(id='name-desc') Helper text for the form control.
-
-            .mb4
-              label.f4.db.mb3(for='subject') Subject 
-                span.normal.black-60 (optional)
-              textarea#subject.input-reset.ba.b--black-20.pa3.db.w-100.h4(
-                name='subject', placeholder='Your message'
-              )
-
-            input.f4.pointer.pa3.b0.dib.bn.br3.white.bg-blue(type='submit', value='Submit')
-
+//-        form.black-50(name='contact', action='thankyou', netlify='')
+//-         .measure
+//-            .mb4
+//-              label.f4.db.mb3(for='fname') First Name
+//-              input#fname.input-reset.ba.b--black-20.pa3.db.w-100(
+//-                type='text', name='firstname', placeholder='Your first name'
+//-              )
+//-
+//-            .mb4
+//-              label.f4.db.mb3(for='lname') Last Name
+//-              input#lname.input-reset.ba.b--black-20.pa3.db.w-100(
+//-                type='text', name='lastname', placeholder='Your last name'
+//-              )
+//-
+//-            .mb4
+//-              label.f4.db.mb3(for='email') Email*
+//-              input#email.input-reset.ba.b--black-20.pa3.db.w-100(
+//-                type='text', name='email', placeholder='Your email'
+//-              )
+//-              small.f6.black-60.db.mt3(id='name-desc') Helper text for the form control.
+//-
+//-            .mb4
+//-              label.f4.db.mb3(for='subject') Subject 
+//-                span.normal.black-60 (optional)
+//-              textarea#subject.input-reset.ba.b--black-20.pa3.db.w-100.h4(
+//-                name='subject', placeholder='Your message'
+//-              )
+//-
+//-            input.f4.pointer.pa3.b0.dib.bn.br3.white.bg-blue(type='submit', value='Submit')
+//-
   </div>
 </form>
 </template>
