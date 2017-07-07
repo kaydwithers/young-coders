@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  app-hero(:hero='hero' text='The Team' heroSmall)
+  app-hero(:hero='hero' text='The Team' hero-small)
   .bg-white 
   .mw9.center.ph3.ph4-ns.pv5.pv6-ns 
     .w-100 
