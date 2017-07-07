@@ -41,7 +41,7 @@ div
   app-events
   section.bg-lg-cyan
     .mw9.center.ph3.ph4-ns.pv5.pv6-ns
-      app-heading.tc(size='2' text='Latest blog posts' customClass='white')
+      app-heading.tc(size='2' text='Latest blog posts' custom-class='white')
 
       .db.flex-ns
         .w-100.w-third-ns(v-for='post in posts')

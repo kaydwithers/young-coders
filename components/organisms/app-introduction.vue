@@ -1,9 +1,9 @@
 <template lang="pug">
 .bg-white
   .mw8.center.pv5.pv6-ns.ph3.ph4-ns.tc
-    app-heading(size='2' :text='introduction.fields.heading')
-    app-paragraph(size='4' :text='introduction.fields.content')
-    app-button(primary text='Email us')
+    app-heading(size='2' text='Lil&rsquo; about us')
+    app-paragraph(size='4' text='Young Coders is an initiative by a few developers and technology enthusiasts to teach young kids programming. We believe education should be free and hence our workshops are free for everyone.')
+    app-button(primary href='mailto:hello@youngcodersau.com' text='Email us')
 </template>
 
 <script>

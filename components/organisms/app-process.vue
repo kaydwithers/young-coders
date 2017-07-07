@@ -2,20 +2,54 @@
 .bg-lg-green
   .mw9.center.ph3.ph4-ns.pv5.pv6-ns
     .w-100.tc
-      app-heading(size='2', text='How it works', customclass='white')
+      app-heading(size='2', text='How it works', custom-class='white')
+
     .db.flex-ns.tc-ns
       .w-100.w-25-ns.ph4-ns
-        img(src='//images.contentful.com/f25yij3y7fx1/2pbTltxs32EyCicKa4864I/315fda947c3e4463273cf2d16b79bcf3/step_1.png', alt='Step1', height='42', width='42')
-        app-paragraph(size='4', text='1. Join us at our location.', customclass='white')
+        img(
+          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499387122/Young%20Coders/how_it_works_01.png' 
+          alt='Step1'
+        )
+        app-paragraph(
+          size='4' 
+          text='1. Join us at our location.' 
+          custom-class='white'
+        )
+
       .w-100.w-25-ns.ph4-ns
-        img(src='//images.contentful.com/f25yij3y7fx1/2pbTltxs32EyCicKa4864I/315fda947c3e4463273cf2d16b79bcf3/step_2.png', alt='Step2', height='42', width='42')
-        app-paragraph(size='4', text='2. Learn some code. Build animations, get help from professionals.', customclass='white')
+        img(
+          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499387122/Young%20Coders/how_it_works_02.png'
+          alt='Step2'
+        )
+
+        app-paragraph(
+          size='4' 
+          text='2. Learn some code. Build animations, get help from professionals.' 
+          custom-class='white'
+        )
+
       .w-100.w-25-ns.ph4-ns
-        img(src='//images.contentful.com/f25yij3y7fx1/2pbTltxs32EyCicKa4864I/315fda947c3e4463273cf2d16b79bcf3/step_3.png', alt='Step3', height='42', width='42')
-        app-paragraph(size='4', text='3. Show off things you have built to your friends.', customclass='white')
+        img(
+          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499387121/Young%20Coders/how_it_works_03.png' 
+          alt='Step3'
+        )
+        app-paragraph(
+          size='4' 
+          text='3. Show off things you have built to your friends.' 
+          custom-class='white'
+        )
+
       .w-100.w-25-ns.ph4-ns
-        img(src='//images.contentful.com/f25yij3y7fx1/2pbTltxs32EyCicKa4864I/315fda947c3e4463273cf2d16b79bcf3/step_4.png', alt='Step4', height='42', width='42')
-        app-paragraph(size='4', text='4. Return once a month to learn new skills.', customclass='white')
+        img(
+          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499387121/Young%20Coders/how_it_works_04.png' 
+          alt='Step4' 
+        )
+        app-paragraph(
+          size='4' 
+          text='4. Return once a month to learn new skills.' 
+          custom-class='white'
+        )
+
 </template>
 
 <script>

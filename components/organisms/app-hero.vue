@@ -10,8 +10,8 @@
   )
 
   .hero__text.pa.tc.ph3
-    app-heading(size='1' :text='text' customClass='white ts-1 mb2')
-    app-paragraph(v-if='hasParagraph' size='4' :text='hero.fields.content' customClass='white ts-1')
+    app-heading(size='1' :text='text' custom-class='white ts-1 mb2')
+    app-paragraph(v-if='hasParagraph' size='4' :text='hero.fields.content' custom-class='white ts-1')
 
   .hero__arrow.pa.tc(v-if='hasArrow')
     a(href='#just-after-video' v-scroll-to="{ el: '#portfolio', duration: 500, easing: 'ease' }")

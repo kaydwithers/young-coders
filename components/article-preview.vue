@@ -6,13 +6,13 @@ article.ph4.tc
     sizes="(min-width: 1024px) 400px, 100vw"
   )
 
-  app-paragraph(size='6' :text='( new Date(post.fields.publishDate)).toDateString()' customClass='white')
+  app-paragraph(size='6' :text='( new Date(post.fields.publishDate)).toDateString()' custom-class='white')
 
   nuxt-link.db.f3.lh-copy.fw6.mb4.link.white(
     :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}"
   ) {{ post.fields.title }}
 
-  app-paragraph(size='5' :text='post.fields.description' customClass='white')
+  app-paragraph(size='5' :text='post.fields.description' custom-class='white')
 
   nuxt-link(
     v-for='tag in post.fields.tags'

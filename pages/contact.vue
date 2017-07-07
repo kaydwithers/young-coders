@@ -1,11 +1,11 @@
 <template lang="pug">
 div
-  app-hero(:hero='hero' text='Contact us' heroSmall)
+  app-hero(:hero='hero' text='Contact us' hero-small)
   .bg-white
     .mw9.center.ph3.ph4-ns.pv6
       .w-100
         app-heading(size='2' :text='page.fields.heading')
-        app-paragraph(size='4' :text='page.fields.content' customClass='mb5 black-50')
+        app-paragraph(size='4' :text='page.fields.content' custom-class='mb5 black-50')
 
         form.black-50(name='contact', action='thankyou', netlify='')
           .measure
