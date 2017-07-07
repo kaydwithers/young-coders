@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  app-hero(:hero='hero' text='Blog' heroSmall)
+  app-hero(:hero='hero' text='Blog' hero-small)
   .bg-white
     .mw9.center.ph3.ph4-ns.pv6
       .w-100
@@ -9,9 +9,9 @@ div
 
   .bg-lg-purple
     .mw9.center.ph3.ph4-ns.pv5.pv6-ns
-      app-heading.tc(size='2' text='Latest blog posts' customClass='white')
+      app-heading.tc(size='2' text='Latest blog posts' custom-class='white')
 
-      .db.flex-ns
+      .db.flex-ns.justify-center
         .w-100.w-third-ns(v-for='post in posts')
           article-preview(:post="post")
 </template>
