@@ -1,19 +1,28 @@
 <template lang="pug">
-.hero.pr.bg-black(:class="{ 'hero--small': heroSmall }")
+.hero.pr.bg-black.overflow-hidden(:class="{ 'hero--small': heroSmall }")
 
-  .hero__overlay.pa
+  .hero__overlay.pa.w-100.h-100
 
-  img(
+  img.w-100.h-100.db.db-m.dn-l(
     :src="hero.fields.heroImage.fields.file.url + '?fit=scale&w=350'"
     :srcset="`${hero.fields.heroImage.fields.file.url}?w=350 350w, ${hero.fields.heroImage.fields.file.url}?w=1000 1000w, ${hero.fields.heroImage.fields.file.url}?w=2000 2000w`"
     sizes="100vw"
   )
 
-  .hero__text.pa.tc.ph3
+  video.w-100.h-100.dn.db-l(
+    :poster='videoPoster' 
+    preload 
+    loop 
+    autoplay 
+    muted
+  ) 
+    source(type='video/mp4' :src='videoSource')
+
+  .hero__text.pa.w-100.tc.ph3
     app-heading(size='1' :text='text' custom-class='white ts-1 mb2')
     app-paragraph(v-if='hasParagraph' size='4' :text='hero.fields.content' custom-class='white ts-1')
 
-  .hero__arrow.pa.tc(v-if='hasArrow')
+  .hero__arrow.pa.w-100.tc(v-if='hasArrow')
     a(href='#just-after-video' v-scroll-to="{ el: '#portfolio', duration: 500, easing: 'ease' }")
       svg(xmlns:xlink='http://www.w3.org/1999/xlink' preserveAspectRatio='xMidYMid' width='77' height='51' viewBox='0 0 77 51')
         g
@@ -32,7 +41,9 @@ export default {
     heroSmall: { default: false },
     text: { default: '[PH] Text' },
     hasParagraph: { default: false },
-    hasArrow: { default: false }
+    hasArrow: { default: false },
+    videoSource: { default: 'http://res.cloudinary.com/dvjpaoffl/video/upload/v1499489853/Young%20Coders/coding.mp4' },
+    videoPoster: { default: '' }
   },
   components: {
     appHeading,
@@ -54,13 +65,10 @@ export default {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
 }
 
 .hero__overlay {
   background-color: rgba(0, 0, 0, .2);
-  height: 100%;
-  width: 100%;
 }
 
 .hero {
@@ -71,10 +79,9 @@ export default {
     height: 60vh;
   }
 
-  .hero img {
+  .hero img,
+  .hero video {
     object-fit: cover;
-    height: 100%;
-    width: 100%;
   }
 
 
@@ -82,170 +89,95 @@ export default {
   left: 50%;
   bottom: 0;
   transform: translate(-50%, -50%);
-  width: 100%;
 }
 
 .feature-text-anim 0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 10px, 0);
-    -moz-transform: translate3d(0, 10px, 0);
-    -ms-transform: translate3d(0, 10px, 0);
-    -o-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0)
+  opacity: 0;
+  transform: translate3d(0, 10px, 0)
 }
 
 .feature-text-anim 75% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 10px, 0);
-    -moz-transform: translate3d(0, 10px, 0);
-    -ms-transform: translate3d(0, 10px, 0);
-    -o-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0)
+  opacity: 0;
+  transform: translate3d(0, 10px, 0)
 }
 
 .feature-text-anim 100% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0)
+  opacity: 1;
+  transform: translate3d(0, 0, 0)
 }
 
 @-webkit-keyframes feature-text-anim {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 10px, 0);
-        -moz-transform: translate3d(0, 10px, 0);
-        -ms-transform: translate3d(0, 10px, 0);
-        -o-transform: translate3d(0, 10px, 0);
-        transform: translate3d(0, 10px, 0)
-    }
-    75% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 10px, 0);
-        -moz-transform: translate3d(0, 10px, 0);
-        -ms-transform: translate3d(0, 10px, 0);
-        -o-transform: translate3d(0, 10px, 0);
-        transform: translate3d(0, 10px, 0)
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0)
-    }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0)
+  }
+  75% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0)
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+  }
 }
 
 @keyframes feature-text-anim {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 10px, 0);
-        -moz-transform: translate3d(0, 10px, 0);
-        -ms-transform: translate3d(0, 10px, 0);
-        -o-transform: translate3d(0, 10px, 0);
-        transform: translate3d(0, 10px, 0)
-    }
-    75% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 10px, 0);
-        -moz-transform: translate3d(0, 10px, 0);
-        -ms-transform: translate3d(0, 10px, 0);
-        -o-transform: translate3d(0, 10px, 0);
-        transform: translate3d(0, 10px, 0)
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0)
-    }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0)
+  }
+  75% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0)
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+  }
 }
 
 .feature-text-anim-alt 0% {
     opacity: 0;
-    -webkit-transform: translate3d(-50%, -45%, 0);
-    -moz-transform: translate3d(-50%, -45%, 0);
-    -ms-transform: translate3d(-50%, -45%, 0);
-    -o-transform: translate3d(-50%, -45%, 0);
     transform: translate3d(-50%, -45%, 0)
 }
 
 .feature-text-anim-alt 67% {
     opacity: 0;
-    -webkit-transform: translate3d(-50%, -45%, 0);
-    -moz-transform: translate3d(-50%, -45%, 0);
-    -ms-transform: translate3d(-50%, -45%, 0);
-    -o-transform: translate3d(-50%, -45%, 0);
     transform: translate3d(-50%, -45%, 0)
 }
 
 .feature-text-anim-alt 100% {
-    opacity: 1;
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    -moz-transform: translate3d(-50%, -50%, 0);
-    -ms-transform: translate3d(-50%, -50%, 0);
-    -o-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0)
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0)
 }
 
 @-webkit-keyframes feature-text-anim-alt {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(-50%, -45%, 0);
-        -moz-transform: translate3d(-50%, -45%, 0);
-        -ms-transform: translate3d(-50%, -45%, 0);
-        -o-transform: translate3d(-50%, -45%, 0);
-        transform: translate3d(-50%, -45%, 0)
-    }
-    67% {
-        opacity: 0;
-        -webkit-transform: translate3d(-50%, -45%, 0);
-        -moz-transform: translate3d(-50%, -45%, 0);
-        -ms-transform: translate3d(-50%, -45%, 0);
-        -o-transform: translate3d(-50%, -45%, 0);
-        transform: translate3d(-50%, -45%, 0)
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translate3d(-50%, -50%, 0);
-        -moz-transform: translate3d(-50%, -50%, 0);
-        -ms-transform: translate3d(-50%, -50%, 0);
-        -o-transform: translate3d(-50%, -50%, 0);
-        transform: translate3d(-50%, -50%, 0)
-    }
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, -45%, 0)
+  }
+  67% {
+    opacity: 0;
+    transform: translate3d(-50%, -45%, 0)
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0)
+  }
 }
 
 @keyframes feature-text-anim-alt {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(-50%, -45%, 0);
-        -moz-transform: translate3d(-50%, -45%, 0);
-        -ms-transform: translate3d(-50%, -45%, 0);
-        -o-transform: translate3d(-50%, -45%, 0);
-        transform: translate3d(-50%, -45%, 0)
-    }
-    67% {
-        opacity: 0;
-        -webkit-transform: translate3d(-50%, -45%, 0);
-        -moz-transform: translate3d(-50%, -45%, 0);
-        -ms-transform: translate3d(-50%, -45%, 0);
-        -o-transform: translate3d(-50%, -45%, 0);
-        transform: translate3d(-50%, -45%, 0)
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translate3d(-50%, -50%, 0);
-        -moz-transform: translate3d(-50%, -50%, 0);
-        -ms-transform: translate3d(-50%, -50%, 0);
-        -o-transform: translate3d(-50%, -50%, 0);
-        transform: translate3d(-50%, -50%, 0)
-    }
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, -45%, 0)
+  }
+  67% {
+    opacity: 0;
+    transform: translate3d(-50%, -45%, 0)
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0)
+  }
 }
-
-
 </style>

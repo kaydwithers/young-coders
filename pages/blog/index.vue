@@ -12,8 +12,9 @@ div
       app-heading.tc(size='2' text='Latest blog posts' custom-class='white')
 
       .db.flex-ns.justify-center
-        .w-100.w-third-ns(v-for='post in posts')
+        .w-100.w-50-m.w-third-l(v-for='post in posts')
           article-preview(:post="post")
+
 </template>
 
 <script>

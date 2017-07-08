@@ -5,6 +5,7 @@ div
     // styled-button I am pink
     nuxt
     app-footer
+
 </template>
 
 <script>

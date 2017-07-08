@@ -4,42 +4,42 @@
     .tc
     app-heading(size='2' text='Team')
     .db.flex-ns.justify-center.flex-wrap
-      .w-100.w-25-ns.ph4.tc
+      .w-100.w-25-ns.ph4.mb4.tc
         img.db.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499400475/Young%20Coders/kruti.jpg')
         app-paragraph(size='5', text='Kruti' custom-class='black-50 mb0')
         app-paragraph(size='6', text='Founder')
 
-      .w-100.w-25-ns.ph4.tc
+      .w-100.w-25-ns.ph4.mb4.tc
         img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499400476/Young%20Coders/kavi.jpg')
         app-paragraph(size='5', text='Kavita Mevada' custom-class='black-50 mb0')
         app-paragraph(size='6', text='Lead Workshop Manager')
 
-      .w-100.w-25-ns.ph4.tc
+      .w-100.w-25-ns.ph4.mb4.tc
         img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499400475/Young%20Coders/hayley.jpg')
         app-paragraph(size='5', text='Hayley Carra' custom-class='black-50 mb0')
         app-paragraph(size='6', text='Editor-in-Chief')
 
-      .w-100.w-25-ns.ph4.tc
+      .w-100.w-25-ns.ph4.mb4.tc
         img.db.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499400475/Young%20Coders/shu.jpg')
         app-paragraph(size='5', text='Shuyen Phoon' custom-class='black-50 mb0') 
         app-paragraph(size='6', text='Editor-in-Chief')
 
-      .w-100.w-25-ns.ph4.tc
+      .w-100.w-25-ns.ph4.mb4.tc
         img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499400476/Young%20Coders/sharath.jpg')
         app-paragraph(size='5', text='Sharath Raj' custom-class='black-50 mb0')
         app-paragraph(size='6', text='Web Developer')
 
-      .w-100.w-25-ns.ph4.tc
+      .w-100.w-25-ns.ph4.mb4.tc
         img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499400476/Young%20Coders/dolly.jpg')
         app-paragraph(size='5', text='Dolly Desai' custom-class='black-50 mb0')
         app-paragraph(size='6', text='Event Organizer')
 
-      .w-100.w-25-ns.ph4.tc
+      .w-100.w-25-ns.ph4.mb4.tc
         img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-4_ehwbbi.jpg')
         app-paragraph(size='5', text='Raffi Martins')
         app-paragraph(size='6', text='Art Director')
 
-      .w-100.w-25-ns.ph4.tc
+      .w-100.w-25-ns.ph4.mb4.tc
         img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-4_ehwbbi.jpg')
         app-paragraph(size='5', text='Kayd Withers')
         app-paragraph(size='6', text='Web Developer')

@@ -2,10 +2,13 @@
 nav.nav-expand
   .ph3.ph5-ns
     .flex.justify-between.items-center
-      div
-        nuxt-link.link.pa2.pointer.fw6.b.f5.f4-ns.dib.mr4(exact to='/' title='Home') ("Young Coders")
+      div.ff-code
+        nuxt-link.link.pa2.pointer.fw6.b.f5.f4-ns.dib.mr4(
+          exact to='/' 
+          title='Home'
+        ) Young Coders ʕ•ᴥ•ʔ
 
-      div.dn.db-ns
+      div.dn.dn-m.db-l
         nuxt-link.link.pa2.pointer.f6.f5-ns.dib.mr4(to='/about' title='About') About
         nuxt-link.link.pa2.pointer.f6.f5-ns.dib.mr4(to='/events' title='Events') Events
         nuxt-link.link.pa2.pointer.f6.f5-ns.dib.mr4(to='/theteam' title='The Team') The Team
@@ -34,10 +37,9 @@ export default {
     window.addEventListener('scroll', fixNav)
   }
 }
-
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 nav {
   left: 0;
   position: fixed;
@@ -45,21 +47,28 @@ nav {
   top: 0;
   transition: background .5s ease-in-out, padding .5s ease-in-out;
   z-index: 1;
-}
 
-  nav a:hover {
+  a:hover {
     color: var(--app-blue-dark);
   }
 
-.nav-expand {
-  color: white;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
-  .nav-expand a {
+.nav-expand {
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @media screen and (min-width: 48em) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  a {
     color: white;
   }
+
+}
 
 .nav-shrink {
   background-color: #ffffff;
@@ -69,9 +78,10 @@ nav {
   color: black;
   padding-top: .5rem;
   padding-bottom: .5rem;
-}
 
-  .nav-shrink a {
+  a {
     color: black;
   }
+
+}
 </style>

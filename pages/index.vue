@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  app-hero(:hero='hero' text='The Coding Workshop <br />for Kids')
+  app-hero(:hero='hero' text="The Coding Workshops<br />for Kids <span class='ff-code'>:)</span>")
 
   app-introduction(:introduction='introduction')
 
@@ -47,7 +47,7 @@ div
       app-heading.tc(size='2' text='Latest blog posts' custom-class='white')
 
       .db.flex-ns.justify-center
-        .w-100.w-third-ns(v-for='post in posts')
+        .w-100.w-50-m.w-third-l(v-for='post in posts')
           article-preview(:post="post")
 
   app-footer

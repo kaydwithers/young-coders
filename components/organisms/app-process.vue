@@ -4,49 +4,48 @@
     .w-100.tc
       app-heading(size='2', text='How it works', custom-class='white')
 
-    .db.flex-ns.tc-ns
-      .w-100.w-25-ns.ph4-ns
-        img(
+    .db.flex-ns.justify-center.flex-wrap.tc
+      .w-100.w-50-m.w-25-l.ph4-ns
+        img.mb4(
           src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499397893/Young%20Coders/how_it_works_01.png' 
           alt=''
         )
         app-paragraph(
           size='4' 
-          text='1. Join us at our location.' 
+          text='Join us at our location.' 
           custom-class='white'
         )
 
-      .w-100.w-25-ns.ph4-ns
-        img(
+      .w-100.w-50-m.w-25-l.ph4-ns
+        img.mb4(
           src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499397893/Young%20Coders/how_it_works_02.png'
           alt=''
         )
-
         app-paragraph(
           size='4' 
-          text='2. Learn some code. Build animations, get help from professionals.' 
+          text='Learn some code. Build animations, get help from professionals.' 
           custom-class='white'
         )
 
-      .w-100.w-25-ns.ph4-ns
-        img(
+      .w-100.w-50-m.w-25-l.ph4-ns
+        img.mb4(
           src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499397893/Young%20Coders/how_it_works_03.png' 
           alt=''
         )
         app-paragraph(
           size='4' 
-          text='3. Show off things you have built to your friends.' 
+          text='Show off things you have built to your friends.' 
           custom-class='white'
         )
 
-      .w-100.w-25-ns.ph4-ns
-        img(
+      .w-100.w-50-m.w-25-l.ph4-ns
+        img.mb4(
           src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499397893/Young%20Coders/how_it_works_04.png' 
           alt='' 
         )
         app-paragraph(
           size='4' 
-          text='4. Return once a month to learn new skills.' 
+          text='Return once a month to learn new skills.' 
           custom-class='white'
         )
 
