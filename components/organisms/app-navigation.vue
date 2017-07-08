@@ -1,25 +1,27 @@
 <template lang="pug">
 nav.nav-expand
-  .ph3.ph5-ns
+  .ph3.ph4-m.ph5-l
     .flex.justify-between.items-center
-      div.ff-code
-        nuxt-link.link.nc-active.pa2.pointer.fw6.b.f5.f4-ns.dib.mr4(
+      .ff-code
+        nuxt-link.link.nc-active.pv2.pointer.fw6.b.f5.f4-ns.dib.mr4(
           exact to='/' 
           title='Home'
         ) Young Coders ʕ•ᴥ•ʔ
 
-      div.dn.dn-m.db-l
-        nuxt-link.link.is-white.pa2.pointer.f6.f5-ns.dib.mr4(to='/about' title='About us') About us
-        nuxt-link.link.is-white.pa2.pointer.f6.f5-ns.dib.mr4(to='/events' title='Events') Events
-        nuxt-link.link.is-white.pa2.pointer.f6.f5-ns.dib.mr4(to='/theteam' title='The Team') The Team
-        nuxt-link.link.is-white.pa2.pointer.f6.f5-ns.dib.mr4(to='/blog' title='Blog') Blog
-        nuxt-link.link.is-white.pa2.pointer.f6.f5-ns.dib(to='/contact' title='Contact') Contact us
+      app-navigation-links
+
+      .db.dn-l
+        app-hamburger
 
 </template>
 
 <script>
+import appHamburger from '~/components/atoms/app-hamburger'
+import appNavigationLinks from '~/components/molecules/app-navigation-links'
+
 export default {
   name: 'app-navigation',
+
   mounted () {
     const nav = document.querySelector('nav')
     const topOfNav = nav.offsetTop
@@ -33,13 +35,18 @@ export default {
         nav.classList.remove('nav-expand')
       }
     }
-
     window.addEventListener('scroll', fixNav)
+  },
+
+  components: {
+    appHamburger,
+    appNavigationLinks
   }
+
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 nav {
   left: 0;
   position: fixed;
@@ -63,6 +70,14 @@ nav {
     color: white;
   }
 
+  .bar {
+    background-color: #fff;
+  }
+
+  .is-active .bar {
+    background-color: black !important;
+  }
+
 }
 
 .nav-shrink {
@@ -76,6 +91,10 @@ nav {
   a,
   a.nc-active {
     color: black;
+  }
+
+  .bar {
+    background-color: black;
   }
 
 }

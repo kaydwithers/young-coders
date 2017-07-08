@@ -15,7 +15,7 @@ const config = {
       { hid: 'description', name: 'description', content: 'The coding workshops for kids' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '~assets/favicon.png' }
     ]
   },
   css: [ 

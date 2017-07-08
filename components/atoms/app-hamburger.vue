@@ -1,9 +1,8 @@
 <template lang="pug">
 .hamburger
-  button( 
+  .pointer.bn.bg-transparent.pt3.pb3.pl3(
     @click="$store.commit('toggleMenu')"
     aria-controls="menu" 
-    class="hamburger-icon  pt-3  pb-3  pr-3  z-4" 
     aria-label="menu" 
     aria-hidden="false" 
     tabindex="0" 
@@ -32,15 +31,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .hamburger-icon {
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  outline: 0;
   position: relative;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   -moz-tap-highlight-color: transparent;
@@ -56,7 +49,6 @@ export default {
 .bar {
   width: 27px;
   height: 3px;
-  background-color: #fff;
   border-radius: 2px;
   margin: auto;
   top: 50%;

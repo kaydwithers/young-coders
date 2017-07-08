@@ -2,7 +2,7 @@
 footer
   .bg-black-80
     .pv4.pv6-ns.tc
-      p.f6.f5-ns.white-50.mb0 © Young Coders
+      p.f6.f5-ns.white-50.mb0 © Young Coders ʕ•ᴥ•ʔ
 </template>
 
 <script>

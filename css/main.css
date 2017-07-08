@@ -64,6 +64,7 @@ a {
     color: #45b2e8;
   }
 
+  :focus,
   .link:focus {
     outline: none;
   }
@@ -87,13 +88,13 @@ img {
     max-width: none;
   }
 
-.page-enter-active, .page-leave-active {
+/*.page-enter-active, .page-leave-active {
   transition: opacity .2s;
 }
 
 .page-enter, .page-leave-to {
   opacity: 0;
-}
+}*/
 
 .app-f1 { 
   font-size: 50px; 

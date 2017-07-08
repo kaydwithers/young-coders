@@ -7,11 +7,18 @@ div
         app-heading(size='2' :text='page.fields.heading')
         app-paragraph(size='4' :text='page.fields.content')
 
+  .bg-lg-pink
+    .mw9.center.ph3.ph4-ns.pv6
+      .w-100
+        app-avatars
+
   // app-test
+
 </template>
 
 <script>
 import { cdaClient } from '~/plugins/contentful-client.js'
+import appAvatars from '~/components/organisms/app-avatars'
 import appHeading from '~/components/atoms/app-heading'
 import appHero from '~/components/organisms/app-hero'
 import appParagraph from '~/components/atoms/app-paragraph'
@@ -37,6 +44,7 @@ export default {
     }).catch(console.error)
   },
   components: {
+    appAvatars,
     appHeading,
     appHero,
     appParagraph,

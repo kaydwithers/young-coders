@@ -13,7 +13,7 @@
         app-paragraph(
           size='4' 
           text='Join us at our location.' 
-          custom-class='white'
+          custom-class='white lh-2'
         )
 
       .w-100.w-50-m.w-25-l.ph4
@@ -24,7 +24,7 @@
         app-paragraph(
           size='4' 
           text='Have fun and learn to code with help from industry professionals.' 
-          custom-class='white'
+          custom-class='white lh-2'
         )
 
       .w-100.w-50-m.w-25-l.ph4
@@ -35,7 +35,7 @@
         app-paragraph(
           size='4' 
           text='Show off your code to friends and family.' 
-          custom-class='white'
+          custom-class='white lh-2'
         )
 
       .w-100.w-50-m.w-25-l.ph4
@@ -46,7 +46,7 @@
         app-paragraph(
           size='4' 
           text='Return once a month to learn new skills.' 
-          custom-class='white'
+          custom-class='white lh-2'
         )
 
 </template>
