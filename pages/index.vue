@@ -50,8 +50,6 @@ div
         .w-100.w-50-m.w-third-l(v-for='post in posts')
           article-preview(:post="post")
 
-  app-footer
-
 </template>
 
 <script>
