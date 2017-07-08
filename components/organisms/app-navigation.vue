@@ -3,17 +3,17 @@ nav.nav-expand
   .ph3.ph5-ns
     .flex.justify-between.items-center
       div.ff-code
-        nuxt-link.link.pa2.pointer.fw6.b.f5.f4-ns.dib.mr4(
+        nuxt-link.link.nc-active.pa2.pointer.fw6.b.f5.f4-ns.dib.mr4(
           exact to='/' 
           title='Home'
         ) Young Coders ʕ•ᴥ•ʔ
 
       div.dn.dn-m.db-l
-        nuxt-link.link.pa2.pointer.f6.f5-ns.dib.mr4(to='/about' title='About') About
-        nuxt-link.link.pa2.pointer.f6.f5-ns.dib.mr4(to='/events' title='Events') Events
-        nuxt-link.link.pa2.pointer.f6.f5-ns.dib.mr4(to='/theteam' title='The Team') The Team
-        nuxt-link.link.pa2.pointer.f6.f5-ns.dib.mr4(to='/blog' title='Blog') Blog
-        nuxt-link.link.pa2.pointer.f6.f5-ns.dib(to='/contact' title='Contact') Contact
+        nuxt-link.link.is-white.pa2.pointer.f6.f5-ns.dib.mr4(to='/about' title='About us') About us
+        nuxt-link.link.is-white.pa2.pointer.f6.f5-ns.dib.mr4(to='/events' title='Events') Events
+        nuxt-link.link.is-white.pa2.pointer.f6.f5-ns.dib.mr4(to='/theteam' title='The Team') The Team
+        nuxt-link.link.is-white.pa2.pointer.f6.f5-ns.dib.mr4(to='/blog' title='Blog') Blog
+        nuxt-link.link.is-white.pa2.pointer.f6.f5-ns.dib(to='/contact' title='Contact') Contact us
 
 </template>
 
@@ -47,15 +47,9 @@ nav {
   top: 0;
   transition: background .5s ease-in-out, padding .5s ease-in-out;
   z-index: 1;
-
-  a:hover {
-    color: var(--app-blue-dark);
-  }
-
 }
 
 .nav-expand {
-  color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
 
@@ -64,7 +58,8 @@ nav {
     padding-bottom: 3rem;
   }
 
-  a {
+  a,
+  a.nc-active {
     color: white;
   }
 
@@ -75,13 +70,19 @@ nav {
   border-bottom-style: solid;
   border-color: rgba( 0, 0, 0, .05 );
   border-width: .125rem;
-  color: black;
   padding-top: .5rem;
   padding-bottom: .5rem;
 
-  a {
+  a,
+  a.nc-active {
     color: black;
   }
 
+}
+
+a:hover,
+a.nuxt-link-active,
+a.nc-active:hover {
+  color: var(--app-blue-dark);
 }
 </style>

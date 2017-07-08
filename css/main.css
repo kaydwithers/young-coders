@@ -7,19 +7,11 @@
   --text-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
-/*@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
-
-@media (--breakpoint-not-small) {}
-@media (--breakpoint-medium) {}
-@media (--breakpoint-large) {}*/
-
 @font-face {
   font-family: "Montserrat";
   font-weight: 400;
   font-style: normal;
-  src: url("/Montserrat-Regular.ttf");
+  src: url("~assets/fonts/Montserrat-Regular.ttf");
   font-display: swap;
 }
 
@@ -27,7 +19,7 @@
   font-family: "Montserrat";
   font-weight: 600;
   font-style: normal;
-  src: url("/Montserrat-SemiBold.ttf");
+  src: url("~assets/fonts/Montserrat-SemiBold.ttf");
   font-display: swap;
 }
 

@@ -5,42 +5,42 @@
     app-heading(size='2' text='Team')
     .db.flex-ns.justify-center.flex-wrap
       .w-100.w-25-ns.ph4.mb4.tc
-        img.db.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499400475/Young%20Coders/kruti.jpg')
+        img.db.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/w_400/v1499400475/Young%20Coders/kruti.jpg')
         app-paragraph(size='5', text='Kruti' custom-class='black-50 mb0')
         app-paragraph(size='6', text='Founder')
 
       .w-100.w-25-ns.ph4.mb4.tc
-        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499400476/Young%20Coders/kavi.jpg')
+        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/w_400/v1499400476/Young%20Coders/kavi.jpg')
         app-paragraph(size='5', text='Kavita Mevada' custom-class='black-50 mb0')
         app-paragraph(size='6', text='Lead Workshop Manager')
 
       .w-100.w-25-ns.ph4.mb4.tc
-        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499400475/Young%20Coders/hayley.jpg')
+        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/w_400/v1499400475/Young%20Coders/hayley.jpg')
         app-paragraph(size='5', text='Hayley Carra' custom-class='black-50 mb0')
         app-paragraph(size='6', text='Editor-in-Chief')
 
       .w-100.w-25-ns.ph4.mb4.tc
-        img.db.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499400475/Young%20Coders/shu.jpg')
+        img.db.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/w_400/v1499400475/Young%20Coders/shu.jpg')
         app-paragraph(size='5', text='Shuyen Phoon' custom-class='black-50 mb0') 
         app-paragraph(size='6', text='Editor-in-Chief')
 
       .w-100.w-25-ns.ph4.mb4.tc
-        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499400476/Young%20Coders/sharath.jpg')
+        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/w_400/v1499400476/Young%20Coders/sharath.jpg')
         app-paragraph(size='5', text='Sharath Raj' custom-class='black-50 mb0')
         app-paragraph(size='6', text='Web Developer')
 
       .w-100.w-25-ns.ph4.mb4.tc
-        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499400476/Young%20Coders/dolly.jpg')
+        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/w_400/v1499400476/Young%20Coders/dolly.jpg')
         app-paragraph(size='5', text='Dolly Desai' custom-class='black-50 mb0')
         app-paragraph(size='6', text='Event Organizer')
 
       .w-100.w-25-ns.ph4.mb4.tc
-        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-4_ehwbbi.jpg')
+        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/w_400/v1499262182/avatar-4_ehwbbi.jpg')
         app-paragraph(size='5', text='Raffi Martins')
         app-paragraph(size='6', text='Art Director')
 
       .w-100.w-25-ns.ph4.mb4.tc
-        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-4_ehwbbi.jpg')
+        img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/w_400/v1499262182/avatar-4_ehwbbi.jpg')
         app-paragraph(size='5', text='Kayd Withers')
         app-paragraph(size='6', text='Web Developer')
     
@@ -48,17 +48,17 @@
     //- app-heading(size='2' text='Board Of Directors')
     //- .db.flex-ns
       //- .w-100.w-25-ns.ph4.tc
-      //-   img.db.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-1_swz7b2.jpg')
+      //-   img.db.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/w_400/v1499262182/avatar-1_swz7b2.jpg')
       //-   app-paragraph(size='5', text='Erik Hallander') 
       //-   app-paragraph(size='6', text='APAC Innovation Director - Isobar')
 
       //- .w-100.w-25-ns.ph4.tc
-      //-   img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-4_ehwbbi.jpg')
+      //-   img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/w_400/v1499262182/avatar-4_ehwbbi.jpg')
       //-   app-paragraph(size='5', text='Michael Riley')
       //-   app-paragraph(size='6', text='Finance / Business Analyst')
 
       //- .w-100.w-25-ns.ph4.tc
-      //-   img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/v1499262182/avatar-5_dwk7t8.jpg')
+      //-   img.ba.br-100.bw3.b--black-20.mb4(src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto/q_80/w_400/v1499262182/avatar-5_dwk7t8.jpg')
       //-   app-paragraph(size='5', text='Kara Bombell)
       //-   app-paragraph(size='6', text='Mobile and Production Director - Isobar')
 

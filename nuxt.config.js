@@ -31,6 +31,26 @@ const config = {
   */
   build: {
     extractCSS: true,
+
+    loaders: [
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        loader: 'url-loader',
+        query: {
+          limit: 10000, // 10KO
+          name: 'img/[name].[hash].[ext]'
+        }
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        query: {
+          limit: 1000, // 1 KO
+          name: 'fonts/[name].[hash:7].[ext]'
+        }
+      }
+    ],
+
     /*
     ** Run ESLINT on save
     */
