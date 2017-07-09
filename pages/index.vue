@@ -61,7 +61,6 @@ import appHero from '~/components/organisms/app-hero'
 import appIntroduction from '~/components/organisms/app-introduction'
 import appParagraph from '~/components/atoms/app-paragraph'
 import appProcess from '~/components/organisms/app-process'
-import appButton from '~/components/atoms/app-button'
 import appEvents from '~/components/organisms/app-events'
 
 export default {
@@ -98,7 +97,6 @@ export default {
     appIntroduction,
     appParagraph,
     appProcess,
-    appButton,
     appEvents
   }
 }

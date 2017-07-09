@@ -29,10 +29,15 @@ html {
   min-height: 100%;
 }
 
-body {
+body,
+::placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .ff-code {
@@ -47,11 +52,13 @@ body {
 .bg-app-blue-dark  { background-color: var(--app-blue-dark); }
 .bg-app-blue-light { background-color: var(--app-blue-light); }
 .bg-lg-blue        { background: linear-gradient(90deg,#0dc5eb 10%,#0697E1 100%); }
+.bg-lg-blue-light  { background: linear-gradient(45deg,#469FFF,#A39AF9); }
 .bg-lg-cyan        { background: linear-gradient(45deg,#30496B,#30B8D2); }
 .bg-lg-gray-light  { background: linear-gradient(to bottom,#fff 10%,#f4f5f5 100%); }
 .bg-lg-green       { background: linear-gradient(to right,#00cfa4,#008b6f); }
 .bg-lg-pink        { background: linear-gradient(135deg,#f783a7 10%,#C74FBA 100%); }
 .bg-lg-purple      { background: linear-gradient(135deg,#476892 10%,#59355D 100%); }
+.bg-lg-sunset      { background: linear-gradient(45deg,#FBCA88,#EF69AD); }
 
 .grid { display: grid; }
 .grid-repeat-3 { grid: repeat(3, auto) / auto-flow 1fr; }
