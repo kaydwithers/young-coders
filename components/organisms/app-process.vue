@@ -7,7 +7,7 @@
     .db.flex-ns.justify-center.flex-wrap.tc
       .w-100.w-50-m.w-25-l.ph4
         img.mb2.mb4-ns(
-          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499397893/Young%20Coders/how_it_works_01.png' 
+          src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto,w_auto,f_auto/v1499397893/Young%20Coders/how_it_works_01.png' 
           alt=''
         )
         app-paragraph(
@@ -18,7 +18,7 @@
 
       .w-100.w-50-m.w-25-l.ph4
         img.mb2.mb4-ns(
-          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499397893/Young%20Coders/how_it_works_02.png'
+          src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto,w_auto,f_auto/v1499397893/Young%20Coders/how_it_works_02.png'
           alt=''
         )
         app-paragraph(
@@ -29,7 +29,7 @@
 
       .w-100.w-50-m.w-25-l.ph4
         img.mb2.mb4-ns(
-          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499397893/Young%20Coders/how_it_works_03.png' 
+          src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto,w_auto,f_auto/v1499397893/Young%20Coders/how_it_works_03.png' 
           alt=''
         )
         app-paragraph(
@@ -40,7 +40,7 @@
 
       .w-100.w-50-m.w-25-l.ph4
         img.mb2.mb4-ns(
-          src='http://res.cloudinary.com/dvjpaoffl/image/upload/v1499397893/Young%20Coders/how_it_works_04.png' 
+          src='http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto,w_auto,f_auto/v1499397893/Young%20Coders/how_it_works_04.png' 
           alt='' 
         )
         app-paragraph(
