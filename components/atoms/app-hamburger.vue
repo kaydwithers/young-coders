@@ -1,6 +1,6 @@
 <template lang="pug">
 .hamburger
-  .pointer.bn.bg-transparent.pt3.pb3.pl3(
+  .pointer.bn.pt3.pb3.pl3(
     @click="$store.commit('toggleMenu')"
     aria-controls="menu" 
     aria-label="menu" 
@@ -9,7 +9,7 @@
     aria-expanded="false"
   )
     .bar-wrapper( 
-      :class="{ 'is-active': $store.state.isMenuActive }"
+      :class="{ 'is-mobile-active': $store.state.isMenuActive }"
     )
       .bar
       .bar
@@ -81,18 +81,18 @@ export default {
   width: 22.95px;
 }
 
-.bar-wrapper.is-active .bar:nth-child(1) {
+.bar-wrapper.is-mobile-active .bar:nth-child(1) {
   width: 27px;
   margin-top: 0;
   animation: crossHamburgerTopBar 0.3s 0.15s forwards;
   animation-timing-function: ease-out;
 }
 
-.bar-wrapper.is-active .bar:nth-child(2) {
+.bar-wrapper.is-mobile-active .bar:nth-child(2) {
   width: 0;
 }
 
-.bar-wrapper.is-active .bar:nth-child(3) {
+.bar-wrapper.is-mobile-active .bar:nth-child(3) {
   margin-top: 0;
   animation: crossHamburgerBottomBar 0.3s 0.15s forwards;
   animation-timing-function: ease-out;

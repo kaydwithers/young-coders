@@ -1,11 +1,7 @@
 <template lang="pug">
 div
   main(role='main')
-    .menu-overlay.fixed.z-1.w-100.h-100.tc(
-      :class="{ 'is-active-mobile': !$store.state.isMenuActive }"
-    )
     app-navigation.z-2
-      app-navigation-links
     // styled-button I am pink
     nuxt
     app-footer

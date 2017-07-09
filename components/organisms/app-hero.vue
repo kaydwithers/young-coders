@@ -18,15 +18,9 @@
   ) 
     source(type='video/mp4' :src='videoSource')
 
-  .hero__text.pa.w-100.tc.ph3
-    app-heading(size='1' :text='text' custom-class='white ts-1 mb2')
+  .hero__text.pa.w-100.tc.ph3.o-100
+    app-heading(size='1' :text='text' custom-class='white-90 ts-1 mb2')
     app-paragraph(v-if='hasParagraph' size='4' :text='hero.fields.content' custom-class='white ts-1')
-
-  .hero__arrow.pa.w-100.tc(v-if='hasArrow')
-    a(href='#just-after-video' v-scroll-to="{ el: '#portfolio', duration: 500, easing: 'ease' }")
-      svg(xmlns:xlink='http://www.w3.org/1999/xlink' preserveAspectRatio='xMidYMid' width='77' height='51' viewBox='0 0 77 51')
-        g
-          path(d='M63.19 14.062l-24.693 22.87-24.693-22.87' style='stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;fill:none;fill-rule:evenodd')
 
 </template>
 
@@ -62,9 +56,9 @@ export default {
 }
 
 .hero__text {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  animation: var(--animation-fade-up);
+  margin: 0 auto;
+  top: 42%;
 }
 
 .hero__overlay {
@@ -84,29 +78,22 @@ export default {
     object-fit: cover;
   }
 
-
-.hero__arrow {
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, -50%);
-}
-
-.feature-text-anim 0% {
+.animation-fade-up 0% {
   opacity: 0;
   transform: translate3d(0, 10px, 0)
 }
 
-.feature-text-anim 75% {
+.animation-fade-up 75% {
   opacity: 0;
   transform: translate3d(0, 10px, 0)
 }
 
-.feature-text-anim 100% {
+.animation-fade-up 100% {
   opacity: 1;
   transform: translate3d(0, 0, 0)
 }
 
-@-webkit-keyframes feature-text-anim {
+@keyframes animation-fade-up {
   0% {
     opacity: 0;
     transform: translate3d(0, 10px, 0)
@@ -118,66 +105,6 @@ export default {
   100% {
     opacity: 1;
     transform: translate3d(0, 0, 0)
-  }
-}
-
-@keyframes feature-text-anim {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 10px, 0)
-  }
-  75% {
-    opacity: 0;
-    transform: translate3d(0, 10px, 0)
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0)
-  }
-}
-
-.feature-text-anim-alt 0% {
-    opacity: 0;
-    transform: translate3d(-50%, -45%, 0)
-}
-
-.feature-text-anim-alt 67% {
-    opacity: 0;
-    transform: translate3d(-50%, -45%, 0)
-}
-
-.feature-text-anim-alt 100% {
-  opacity: 1;
-  transform: translate3d(-50%, -50%, 0)
-}
-
-@-webkit-keyframes feature-text-anim-alt {
-  0% {
-    opacity: 0;
-    transform: translate3d(-50%, -45%, 0)
-  }
-  67% {
-    opacity: 0;
-    transform: translate3d(-50%, -45%, 0)
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(-50%, -50%, 0)
-  }
-}
-
-@keyframes feature-text-anim-alt {
-  0% {
-    opacity: 0;
-    transform: translate3d(-50%, -45%, 0)
-  }
-  67% {
-    opacity: 0;
-    transform: translate3d(-50%, -45%, 0)
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(-50%, -50%, 0)
   }
 }
 </style>

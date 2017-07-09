@@ -43,41 +43,41 @@ export default {
 </script>
 
 <style lang="scss">
-.menu-overlay {
-  transition: opacity .5s;
+// .menu-overlay {
+//   transition: opacity .5s;
 
-  @media screen and (max-width: 29em) {
-    background-color: white;
-    display: block;
-  }
+//   @media screen and (max-width: 29em) {
+//     background-color: white;
+//     display: block;
+//   }
 
-  @media screen and (min-width: 30em) {
-    display: none;
-  }
-}
+//   @media screen and (min-width: 30em) {
+//     display: none;
+//   }
+// }
 
-@media screen and (max-width: 29em) {
-  .navigation-links {
-    display: none;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 150%;
-    width: 100%;
-  }
+// @media screen and (max-width: 29em) {
+//   .navigation-links {
+//     display: none;
+//     left: 0;
+//     position: absolute;
+//     right: 0;
+//     top: 150%;
+//     width: 100%;
+//   }
 
-  .navigation-links.is-active {
-    display: block;
+//   .navigation-links.is-active {
+//     display: block;
 
-    a {
-      color: black;
-    }
+//     a {
+//       color: black;
+//     }
 
-  }
+//   }
 
-  .is-active-mobile {
-    opacity: 0;
-  }
+//   .is-active-mobile {
+//     opacity: 0;
+//   }
 
-}
+// }
 </style>

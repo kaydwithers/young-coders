@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  app-hero(:hero='hero' text="The coding workshops<br />for kids <span class='ff-code'>:)</span>")
+  app-hero(:hero='hero' text="Coding workshops<br />for kids <span class='ff-code'>:)</span>")
 
   app-introduction(:introduction='introduction')
 
