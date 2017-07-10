@@ -20,10 +20,6 @@ div
 
         app-paragraph(size='5' :text='post.fields.body')
 
-
-
-
-
 </template>
 
 <script>
