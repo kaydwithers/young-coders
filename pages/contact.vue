@@ -42,7 +42,7 @@ div
             )
 
           input.f4.pointer.pa3.b0.dib.bn.br3.black(
-            type='submit' value='Send'
+              type="submit" class="form-control submit" value="SEND MESSAGE"
           )
 
 </template>
