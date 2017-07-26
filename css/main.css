@@ -56,7 +56,7 @@ body,
 .bg-lg-cyan        { background: linear-gradient(45deg,#30496B,#30B8D2); }
 .bg-lg-gray-light  { background: linear-gradient(to bottom,#fff 10%,#f4f5f5 100%); }
 .bg-lg-green       { background: linear-gradient(to right,#00cfa4,#008b6f); }
-.bg-lg-pink        { background: linear-gradient(135deg,#f783a7 10%,#C74FBA 100%); }
+.bg-lg-pink        { background: linear-gradient(45deg,#30496B,#30B8D2); }
 .bg-lg-purple      { background: linear-gradient(135deg,#476892 10%,#59355D 100%); }
 .bg-lg-sunset      { background: linear-gradient(45deg,#FBCA88,#EF69AD); }
 

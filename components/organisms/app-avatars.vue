@@ -54,10 +54,15 @@ div
       //app-paragraph(size='6', text='Volunteer' custom-class='white-70 mb0')
  
     .w-100.w-25-ns.ph4.mb4.tc
-      img.ba.br-100.bw3.b--black-10.mb4(src='http://res.cloudinary.com/dvkozhom2/image/upload/v1501073574/abby_kv1pge.jpg')
+      img.ba.br-100.bw3.b--black-10.mb4(src='http://res.cloudinary.com/dvkozhom2/image/upload/v1501076345/abby_rdthuy.jpg')
       app-paragraph(size='5', text='Abby Goode' custom-class='white mb0 lh-1')
       //app-paragraph(size='6', text='Volunteer' custom-class='white-70 mb0')
- 
+    
+    .w-100.w-25-ns.ph4.mb4.tc
+      img.ba.br-100.bw3.b--black-10.mb4(src='http://res.cloudinary.com/dvkozhom2/image/upload/v1501076344/zubin_ms3krg.jpg')
+      app-paragraph(size='5', text='Zubin Pratap' custom-class='white mb0 lh-1')
+      //app-paragraph(size='6', text='Volunteer' custom-class='white-70 mb0')
+
   //- .tc
   //- app-heading(size='2' text='Board Of Directors')
   //- .db.flex-ns
