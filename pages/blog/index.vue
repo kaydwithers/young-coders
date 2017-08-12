@@ -18,22 +18,23 @@ div
 </template>
 
 <script>
-import { cdaClient } from '../../plugins/contentful-client.js'
+import {createClient} from '~/plugins/contentful.js'
 import ArticlePreview from '~components/article-preview.vue'
 import appHeading from '~/components/atoms/app-heading'
 import appHero from '~/components/organisms/app-hero'
 import appParagraph from '~/components/atoms/app-paragraph'
 
-export default {
+const client = createClient()
 
-  asyncData ({ params }) {
+export default {
+  asyncData ({ env, params }) {
     return Promise.all([
-      cdaClient.getEntries({
-        'content_type': process.env.CTF_BLOG_POST_TYPE_ID,
+      client.getEntries({
+        'content_type': env.CTF_BLOG_POST_TYPE_ID,
         order: '-sys.createdAt'
       }),
-      cdaClient.getEntries({
-        'content_type': process.env.CTF_HERO_ID,
+      client.getEntries({
+        'content_type': env.CTF_HERO_ID,
         order: '-sys.createdAt'
       })
     ]).then(([entries, hero]) => {
@@ -43,6 +44,7 @@ export default {
       }
     })
   },
+
   components: {
     ArticlePreview,
     appHeading,

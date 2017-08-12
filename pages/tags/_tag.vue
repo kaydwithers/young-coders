@@ -31,17 +31,19 @@ div
 </template>
 
 <script>
-import { cdaClient } from '../../plugins/contentful-client.js'
+import {createClient} from '~plugins/contentful.js'
 import Navigation from '~components/navigation.vue'
 import ArticlePreview from '~components/article-preview.vue'
 import appHeading from '~/components/atoms/app-heading'
 import appHero from '~/components/organisms/app-hero'
 import appParagraph from '~/components/atoms/app-paragraph'
 
+const client = createClient()
+
 export default {
-  asyncData ({ params }) {
-    return cdaClient.getEntries({
-      'content_type': process.env.CTF_BLOG_POST_TYPE_ID,
+  asyncData ({ env, params }) {
+    return client.getEntries({
+      'content_type': env.CTF_BLOG_POST_TYPE_ID,
       'fields.tags[in]': params.tag,
       'fields.slug': params.slug,
       order: '-sys.createdAt'

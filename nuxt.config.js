@@ -1,7 +1,17 @@
-const ctfConfig = require('./plugins/contentful-client').config
-const cdaClient = require('./plugins/contentful-client').cdaClient
-const cmaClient = require('./plugins/contentful-client').cmaClient
-const { join } = require('path')
+const {getConfigForKeys} = require('./lib/config.js')
+const ctfConfig = getConfigForKeys([
+  'CTF_BLOG_POST_TYPE_ID',
+  'CTF_SPACE_ID',
+  'CTF_CDA_ACCESS_TOKEN',
+  'CTF_CMA_ACCESS_TOKEN',
+  'CTF_PERSON_ID'
+])
+const {createClient} = require('./plugins/contentful')
+const cdaClient = createClient(ctfConfig)
+const cmaContentful = require('contentful-management')
+const cmaClient = cmaContentful.createClient({
+  accessToken: ctfConfig.CTF_CMA_ACCESS_TOKEN
+})
 
 const config = {
   /*
@@ -20,37 +30,18 @@ const config = {
   },
   css: [ 
     'tachyons/css/tachyons.css',
-    join(__dirname, 'css/main.css')
+    '~/css/main.css'
   ],
+
   /*
   ** Customize the progress-bar color
   */
   loading: { color: '#2199e8' },
+
   /*
   ** Build configuration
   */
   build: {
-    extractCSS: true,
-
-    loaders: [
-      {
-        test: /\.(png|jpe?g|gif|svg)$/,
-        loader: 'url-loader',
-        query: {
-          limit: 10000, // 10KO
-          name: 'img/[name].[hash].[ext]'
-        }
-      },
-      {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url-loader',
-        query: {
-          limit: 1000, // 1 KO
-          name: 'fonts/[name].[hash:7].[ext]'
-        }
-      }
-    ],
-
     /*
     ** Run ESLINT on save
     */
@@ -73,10 +64,12 @@ const config = {
   },
 
   /*
-  ** ᕕ( ᐛ )ᕗ CTF-BLOG-IN-5-MINUTESnpm run de
+  ** ᕕ( ᐛ )ᕗ CTF-BLOG-IN-5-MINUTES
   ** Make client available everywhere via Nuxt plugins
   */
-  plugins: ['~plugins/contentful-client'],
+  plugins: [
+    '~plugins/contentful'
+  ],
 
   /*
   ** ᕕ( ᐛ )ᕗ CTF-BLOG-IN-5-MINUTES
@@ -90,22 +83,35 @@ const config = {
   generate: {
     routes () {
       return Promise.all([
+        // get all blog posts
         cdaClient.getEntries({
           'content_type': ctfConfig.CTF_BLOG_POST_TYPE_ID
         }),
+        // get the blog post content type
         cmaClient.getSpace(ctfConfig.CTF_SPACE_ID)
           .then(space => space.getContentType(ctfConfig.CTF_BLOG_POST_TYPE_ID))
       ])
       .then(([entries, postType]) => {
         return [
-          ...entries.items.map(entry => `blog/${entry.fields.slug}`),
-          ...postType.fields.find(field => field.id === 'tags').items.validations[0].in.map(tag => `tags/${tag}`)
+          // map entries to URLs
+          ...entries.items.map(entry => `/blog/${entry.fields.slug}`),
+          // map all possible tags to URLs
+          ...postType.fields.find(field => field.id === 'tags').items.validations[0].in.map(tag => `/tags/${tag}`)
         ]
       })
     }
   },
 
-  env: ctfConfig
+  /*
+  ** Define environment variables being available
+  ** in generate and browser context
+  */
+  env: {
+    CTF_SPACE_ID: ctfConfig.CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN: ctfConfig.CTF_CDA_ACCESS_TOKEN,
+    CTF_PERSON_ID: ctfConfig.CTF_PERSON_ID,
+    CTF_BLOG_POST_TYPE_ID: ctfConfig.CTF_BLOG_POST_TYPE_ID
+  }
 }
 
 module.exports = config

@@ -17,29 +17,31 @@ div
 </template>
 
 <script>
-import { cdaClient } from '~/plugins/contentful-client.js'
+import {createClient} from '~/plugins/contentful.js'
 import appAvatars from '~/components/organisms/app-avatars'
 import appHeading from '~/components/atoms/app-heading'
 import appHero from '~/components/organisms/app-hero'
 import appParagraph from '~/components/atoms/app-paragraph'
 import appTest from '~/components/app-test'
 
+const client = createClient()
+
 export default {
   name: 'about',
   asyncData ({ params }) {
     return Promise.all([
-      cdaClient.getEntries({
+      client.getEntries({
         'content_type': process.env.CTF_PAGE_ID,
         order: '-sys.createdAt'
       }),
-      cdaClient.getEntries({
+      client.getEntries({
         'content_type': process.env.CTF_HERO_ID,
         order: '-sys.createdAt'
       })
     ]).then(([page, hero]) => {
       return {
         hero: hero.items[0],
-        page: page.items[3]
+        page: page.items[4]
       }
     }).catch(console.error)
   },

@@ -53,7 +53,7 @@ div
 </template>
 
 <script>
-import { cdaClient } from '../plugins/contentful-client.js'
+import {createClient} from '~plugins/contentful.js'
 import ArticlePreview from '~components/article-preview.vue'
 import appAvatars from '~/components/organisms/app-avatars'
 import appHeading from '~/components/atoms/app-heading'
@@ -63,22 +63,24 @@ import appParagraph from '~/components/atoms/app-paragraph'
 import appProcess from '~/components/organisms/app-process'
 import appEvents from '~/components/organisms/app-events'
 
+const client = createClient()
+
 export default {
-  asyncData ({ params }) {
+  asyncData ({env}) {
     return Promise.all([
-      cdaClient.getEntries({
-        'sys.id': process.env.CTF_PERSON_ID
+      client.getEntries({
+        'sys.id': env.CTF_PERSON_ID
       }),
-      cdaClient.getEntries({
-        'content_type': process.env.CTF_BLOG_POST_TYPE_ID,
+      client.getEntries({
+        'content_type': env.CTF_BLOG_POST_TYPE_ID,
         order: '-sys.createdAt'
       }),
-      cdaClient.getEntries({
-        'content_type': process.env.CTF_HERO_ID,
+      client.getEntries({
+        'content_type': env.CTF_HERO_ID,
         order: '-sys.createdAt'
       }),
-      cdaClient.getEntries({
-        'content_type': process.env.CTF_INTRODUCTION_ID
+      client.getEntries({
+        'content_type': env.CTF_INTRODUCTION_ID
       })
     ]).then(([entries, posts, hero, introduction]) => {
       return {

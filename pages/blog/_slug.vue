@@ -24,15 +24,17 @@ div
 
 <script>
 import VueMarkdown from 'vue-markdown'
-import {cdaClient} from '../../plugins/contentful-client.js'
+import {createClient} from '~/plugins/contentful.js'
 import Navigation from '~components/navigation.vue'
 import appHeading from '~/components/atoms/app-heading'
 import appParagraph from '~/components/atoms/app-paragraph'
 
+const client = createClient()
+
 export default {
-  asyncData ({ params }) {
-    return cdaClient.getEntries({
-      'content_type': process.env.CTF_BLOG_POST_TYPE_ID,
+  asyncData ({ env, params }) {
+    return client.getEntries({
+      'content_type': env.CTF_BLOG_POST_TYPE_ID,
       'fields.slug': params.slug
     }).then(entries => {
       return {
@@ -41,6 +43,7 @@ export default {
     })
     .catch(console.error)
   },
+
   components: {
     appHeading,
     appParagraph,
@@ -49,7 +52,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

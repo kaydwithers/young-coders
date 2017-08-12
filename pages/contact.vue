@@ -48,30 +48,36 @@ div
 </template>
 
 <script>
-import { cdaClient } from '~/plugins/contentful-client.js'
+import {createClient} from '~/plugins/contentful.js'
 import appHeading from '~/components/atoms/app-heading'
 import appHero from '~/components/organisms/app-hero'
 import appParagraph from '~/components/atoms/app-paragraph'
 
+const client = createClient()
+
 export default {
-  name: 'about',
-  asyncData ({ params }) {
+  name: 'contact',
+  asyncData ({env}) {
     return Promise.all([
-      cdaClient.getEntries({
-        'content_type': process.env.CTF_PAGE_ID,
+      // fetch all pages sorted by creation date
+      client.getEntries({
+        'content_type': env.CTF_PAGE_ID,
         order: '-sys.createdAt'
       }),
-      cdaClient.getEntries({
-        'content_type': process.env.CTF_HERO_ID,
+      client.getEntries({
+        'content_type': env.CTF_HERO_ID,
         order: '-sys.createdAt'
       })
     ]).then(([page, hero]) => {
+      // return data that should be available
+      // in the template
       return {
         hero: hero.items[0],
-        page: page.items[2]
+        page: page.items[3]
       }
     }).catch(console.error)
   },
+
   components: {
     appHeading,
     appHero,
