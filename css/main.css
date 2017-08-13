@@ -45,7 +45,11 @@ body,
 }
 
 pre {
-  overflow: scroll;
+  color: lemonchiffon;
+  background-color: rgba(0,0,0,.8);
+  padding: 2rem;
+  margin: 2rem;
+  white-space: pre-wrap;
 }
 
 .app-gray       { color: var(--app-gray); }

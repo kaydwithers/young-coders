@@ -28,7 +28,7 @@ const config = {
       { rel: 'icon', type: 'image/x-icon', href: '~assets/favicon.png' }
     ]
   },
-  css: [ 
+  css: [
     'tachyons/css/tachyons.css',
     '~/css/main.css'
   ],

@@ -22,11 +22,11 @@
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'
 import {createClient} from '~/plugins/contentful.js'
-import Navigation from '~components/navigation.vue'
 import appHeading from '~/components/atoms/app-heading'
 import appParagraph from '~/components/atoms/app-paragraph'
+import Navigation from '~components/navigation.vue'
+import VueMarkdown from 'vue-markdown'
 
 const client = createClient()
 
@@ -51,3 +51,10 @@ export default {
   }
 }
 </script>
+
+<style>
+.blog-slug h2 {
+  color: black;
+  margin-top: 3rem;
+}
+</style>

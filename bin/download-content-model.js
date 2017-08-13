@@ -1,7 +1,7 @@
 const clone = require('git-clone')
 const path = require('path')
 
-console.log('Cloning content model');
+console.log('Cloning content model')
 clone(
   'git@github.com:contentful/content-models.git',
   path.resolve(__dirname, '..', 'data'),
