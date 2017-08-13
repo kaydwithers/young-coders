@@ -1,12 +1,11 @@
 <template lang="pug">
-div
-  header
-    img(
-      :src="post.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=196'"
-      :srcset="`${post.fields.heroImage.fields.file.url}?w=350&h=87&fit=fill 350w, ${post.fields.heroImage.fields.file.url}?w=1000&h=250&fit=fill 1000w, ${post.fields.heroImage.fields.file.url}?w=2000&h=500&fit=fill 2000w`"
-      size="100vw"
-      :alt="post.fields.heroImage.fields.description"
-    )
+.blog-slug
+  img.vh-25-m.of-c(
+    :src="post.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=196'"
+    :srcset="`${post.fields.heroImage.fields.file.url}?w=350&h=87&fit=fill 350w, ${post.fields.heroImage.fields.file.url}?w=1000&h=250&fit=fill 1000w, ${post.fields.heroImage.fields.file.url}?w=2000&h=500&fit=fill 2000w`"
+    size="100vw"
+    :alt="post.fields.heroImage.fields.description"
+  )
 
   .bg-white
     .mw9.center.ph3.ph4-ns.pv6

@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+.app-avatars
   .tc
   app-heading(size='2' text='Team' custom-class='white mb4')
   .db.flex-ns.justify-center.flex-wrap

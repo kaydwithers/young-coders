@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+.tag
   header
     img(
       :src="post.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=196'"

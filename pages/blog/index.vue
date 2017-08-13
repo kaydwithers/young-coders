@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+.blog-index
   app-hero(:hero='hero' text='Blog' hero-small)
   .bg-white
     .mw9.center.ph3.ph4-ns.pv6

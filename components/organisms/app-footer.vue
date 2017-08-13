@@ -1,5 +1,5 @@
-<template lang='pug'>
-footer
+<template lang="pug">
+footer.app-footer
   .bg-black-80
     .pv4.pv6-ns.tc
       p.f6.f5-ns.white-50.mb3 © Young Coders ʕ•ᴥ•ʔ

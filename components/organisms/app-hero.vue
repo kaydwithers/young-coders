@@ -1,26 +1,27 @@
 <template lang="pug">
-.hero.pr.bg-black.overflow-hidden(:class="{ 'hero--small': heroSmall }")
+.app-hero
+  .hero.pr.bg-black.overflow-hidden(:class="{ 'hero--small': heroSmall }")
 
-  .hero__overlay.pa.w-100.h-100
+    .hero__overlay.pa.w-100.h-100
 
-  img.w-100.h-100.db.db-m.dn-l(
-    :src="hero.fields.heroImage.fields.file.url + '?fit=scale&w=350'"
-    :srcset="`${hero.fields.heroImage.fields.file.url}?w=350 350w, ${hero.fields.heroImage.fields.file.url}?w=1000 1000w, ${hero.fields.heroImage.fields.file.url}?w=2000 2000w`"
-    sizes="100vw"
-  )
+    img.w-100.h-100.db.db-m.dn-l(
+      :src="hero.fields.heroImage.fields.file.url + '?fit=scale&w=350'"
+      :srcset="`${hero.fields.heroImage.fields.file.url}?w=350 350w, ${hero.fields.heroImage.fields.file.url}?w=1000 1000w, ${hero.fields.heroImage.fields.file.url}?w=2000 2000w`"
+      sizes="100vw"
+    )
 
-  video.w-100.h-100.dn.db-l(
-    :poster='videoPoster' 
-    preload 
-    loop 
-    autoplay 
-    muted
-  ) 
-    source(type='video/mp4' :src='videoSource')
+    video.w-100.h-100.dn.db-l(
+      :poster='videoPoster' 
+      preload 
+      loop 
+      autoplay 
+      muted
+    ) 
+      source(type='video/mp4' :src='videoSource')
 
-  .hero__text.pa.w-100.tc.ph3.o-100
-    app-heading(size='1' :text='text' custom-class='white-90 ts-1 mb2')
-    app-paragraph(v-if='hasParagraph' size='4' :text='hero.fields.content' custom-class='white ts-1')
+    .hero__text.pa.w-100.tc.ph3.o-100
+      app-heading(size='1' :text='text' custom-class='white-90 ts-1 mb2')
+      app-paragraph(v-if='hasParagraph' size='4' :text='hero.fields.content' custom-class='white ts-1')
 
 </template>
 
