@@ -4,7 +4,7 @@
     .mw9.center.ph3.ph4-ns.pv5.pv6-ns.tc
       .db.flex-ns.justify-center.flex-wrap
 
-        .w-100.w-50-ns.ph4.mb5.tc
+        .w-100.w-50-ns.ph4.mb5.mb0-ns.tc
           app-heading(size='2', text='Upcoming Events')
           .db.flex-ns
             .w-100.ph4
