@@ -12,8 +12,7 @@
               app-paragraph(size='4', text='On 12 August 2017' custom-class='black-50 mb0')
               app-paragraph(size='4', text='Place: Isobar Australia, Level 4, 111 Cecil Street, South Melbourne' custom-class='black-50 mb4')
               app-paragraph(size='4', text='Time : 12:00 pm to 2:00 pm' custom-class='black-50 mb4') 
-              a(href='https://www.eventbrite.com.au/e/coding-102-website-with-html-css-tickets-36465643722?ref=ebtn', target='_blank')
-                img.mauto(src='https://www.eventbrite.com.au/custombutton?eid=36465643722', alt='Eventbrite - Coding 102: Website with HTML & CSS')
+              app-button(secondary blank destination='https://www.eventbrite.com.au/e/coding-102-website-with-html-css-tickets-36465643722?ref=ebtn' text='Register here')
 
         .w-100.w-50-ns.ph4.tc
           app-heading(size='2', text='Past Events')
@@ -26,12 +25,14 @@
 </template>
 
 <script>
+import appButton from '~/components/atoms/app-button'
 import appHeading from '~/components/atoms/app-heading'
 import appParagraph from '~/components/atoms/app-paragraph'
 
 export default {
   name: 'app-events',
   components: {
+    appButton,
     appHeading,
     appParagraph
   }

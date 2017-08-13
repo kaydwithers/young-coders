@@ -1,6 +1,6 @@
 <template lang="pug">
-button.pointer.f5.f4-ns.pa3.b0.dib.bn.br3(
-  :class="{ 'bg-hot-pink': secondary, 'bg-blue': primary }"
+button.pointer.f5.f4-ns.pa3.b0.dib.bn.br3.dim(
+  :class="{ 'bg-app-orange': secondary, 'bg-blue': primary }"
 )
   a.link.white.hover-white(:href='destination') {{ text }}
 </template>
@@ -11,7 +11,7 @@ export default {
   props: {
     text: { default: '[PH] Button' },
     destination: { default: '' },
-    primary: { default: true },
+    primary: { default: false },
     secondary: { default: false }
   }
 }
@@ -25,7 +25,6 @@ button {
 }
 
 button:hover {
-  background-color: var(--app-blue-light);
   transform: translateY(-1px);
   box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }

@@ -1,46 +1,45 @@
 <template lang="pug">
-nav.app-navigation
-  .nav-expand
-    .ph3.ph4-m.ph5-l
-      .flex.justify-between.items-center
-        .ff-code.z-1(
+nav.app-navigation.nav-expand
+  .ph3.ph4-m.ph5-l
+    .flex.justify-between.items-center
+      .ff-code.z-1(
+        :class="{ 'is-mobile-active': $store.state.isMenuActive }"
+      )
+        nuxt-link.logo.link.nc-active.pv2.pointer.fw6.b.f5.f4-ns.dib.mr4(
+          exact to='/' 
+          title='Home'
+        ) Young Coders ʕ•ᴥ•ʔ
+
+      .navigation-links
+        .tc.tc-m.tr-l.z-2(
           :class="{ 'is-mobile-active': $store.state.isMenuActive }"
         )
-          nuxt-link.logo.link.nc-active.pv2.pointer.fw6.b.f5.f4-ns.dib.mr4(
-            exact to='/' 
-            title='Home'
-          ) Young Coders ʕ•ᴥ•ʔ
+          nuxt-link.link.pa2.pointer.f3.f5-l.mr4-l.pv4.pv0-l(
+            @click.native="$store.commit('toggleMenu')"
+            to='/about' 
+            title='About us' 
+          ) About
 
-        .navigation-links
-          .tc.tc-m.tr-l.z-2(
-            :class="{ 'is-mobile-active': $store.state.isMenuActive }"
-          )
-            nuxt-link.link.pa2.pointer.f3.f5-l.mr4-l.pv4.pv0-l(
-              @click.native="$store.commit('toggleMenu')"
-              to='/about' 
-              title='About us' 
-            ) About
+          nuxt-link.link.pa2.pointer.f3.f5-l.mr4-l.pv4.pv0-l(
+            @click.native="$store.commit('toggleMenu')"
+            to='/events' 
+            title='Events' 
+          ) Events
 
-            nuxt-link.link.pa2.pointer.f3.f5-l.mr4-l.pv4.pv0-l(
-              @click.native="$store.commit('toggleMenu')"
-              to='/events' 
-              title='Events' 
-            ) Events
+          nuxt-link.link.pa2.pointer.f3.f5-l.mr4-l.pv4.pv0-l(
+            @click.native="$store.commit('toggleMenu')"
+            to='/blog' 
+            title='Blog' 
+          ) Blog
 
-            nuxt-link.link.pa2.pointer.f3.f5-l.mr4-l.pv4.pv0-l(
-              @click.native="$store.commit('toggleMenu')"
-              to='/blog' 
-              title='Blog' 
-            ) Blog
+          nuxt-link.link.pv2.pl2.pointer.f3.f5-l.pv4.pv0-l(
+            @click.native="$store.commit('toggleMenu')"
+            to='/contact' 
+            title='Contact' 
+          ) Contact
 
-            nuxt-link.link.pv2.pl2.pointer.f3.f5-l.pv4.pv0-l(
-              @click.native="$store.commit('toggleMenu')"
-              to='/contact' 
-              title='Contact' 
-            ) Contact
-
-        .db.dn-l
-          app-hamburger
+      .db.dn-l
+        app-hamburger
 
 </template>
 
