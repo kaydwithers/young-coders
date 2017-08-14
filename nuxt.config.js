@@ -68,8 +68,8 @@ const config = {
   ** Make client available everywhere via Nuxt plugins
   */
   plugins: [
-    { src: '~plugins/contentful.js' },
-    { src: '~plugins/ga.js', ssr: false }
+    { src: '~plugins/contentful' },
+    { src: '~plugins/ga', ssr: false }
   ],
 
   /*
