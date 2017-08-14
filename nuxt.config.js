@@ -69,7 +69,7 @@ const config = {
   */
   plugins: [
     '~plugins/contentful',
-    '~plugins/ga'
+    { src: '~plugins/ga.js', ssr: false }
   ],
 
   /*
