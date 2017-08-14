@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === 'production') {
   /*
   ** Set the current page
   */
-  ga('create', 'UA-XXXXXXXX-X', 'auto')
+  ga('create', 'UA-104501170-1', 'auto')
   /*
   ** Every time the route changes (fired on initialization too)
   */
