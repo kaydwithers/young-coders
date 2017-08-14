@@ -47,7 +47,6 @@ export default {
         { name: 'Abby Goode', image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_auto,f_auto/v1501076345/abby_rdthuy.jpg' },
         { name: 'Dolly Desai', image: 'http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto,q_auto,w_auto,f_auto/v1499400475/Young%20Coders/dolly.jpg' },
         { name: 'Michael Riley', image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_auto,f_auto/v1501073228/michael_j4qdnp.jpg' },
-        { name: 'Natasja Laurie', image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_auto,f_auto/v1501072665/natasja_hwni49.jpg' },
         { name: 'Abigail Corpus', image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_auto,f_auto/v1501073020/abi_kgnxtj.jpg' },
         { name: 'Zubin Pratap', image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_auto,f_auto/v1501076344/zubin_ms3krg.jpg' },
         { name: 'Kayd Withers', image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_auto,f_auto/v1501072666/kayd_qzu2mg.jpg' }
