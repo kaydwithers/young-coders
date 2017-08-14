@@ -65,9 +65,10 @@ pre {
 .bg-lg-blue-light  { background: linear-gradient(45deg,#469FFF,#A39AF9); }
 .bg-lg-cyan        { background: linear-gradient(45deg,#30496B,#30B8D2); }
 .bg-lg-gray-light  { background: linear-gradient(to bottom,#fff 10%,#f4f5f5 100%); }
-.bg-lg-green       { background: linear-gradient(to right,#00cfa4,#008b6f); }
-.bg-lg-pink        { background: linear-gradient(45deg,#30496B,#30B8D2); }
-.bg-lg-purple      { background: linear-gradient(135deg,#476892 10%,#59355D 100%); }
+.bg-lg-green       { background: linear-gradient(45deg, #008b6f, #00cfa4); }
+.bg-lg-pink        { background: linear-gradient(45deg, #30496B,#30B8D2); }
+.bg-lg-purple      { background: linear-gradient(135deg, #476892 10%,#59355D 100%); }
+.bg-lg-solid-vault { background: linear-gradient(45deg, #3a6073, #3a7bd5); }
 .bg-lg-sunset      { background: linear-gradient(45deg,#FBCA88,#EF69AD); }
 
 .grid { display: grid; }

@@ -50,6 +50,8 @@ div
         .w-100.w-50-m.w-third-l(v-for='post in posts')
           article-preview(:post="post")
 
+  app-supporters
+
 </template>
 
 <script>
@@ -62,6 +64,7 @@ import appIntroduction from '~/components/organisms/app-introduction'
 import appParagraph from '~/components/atoms/app-paragraph'
 import appProcess from '~/components/organisms/app-process'
 import appEvents from '~/components/organisms/app-events'
+import appSupporters from '~/components/organisms/app-supporters'
 
 const client = createClient()
 
@@ -99,7 +102,8 @@ export default {
     appIntroduction,
     appParagraph,
     appProcess,
-    appEvents
+    appEvents,
+    appSupporters
   }
 }
 </script>

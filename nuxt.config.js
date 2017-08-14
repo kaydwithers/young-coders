@@ -63,6 +63,10 @@ const config = {
     ]
   },
 
+  modules: [
+    ['@nuxtjs/google-analytics', { ua: 'UA-104501170-1' }],
+  ],
+
   /*
   ** ᕕ( ᐛ )ᕗ CTF-BLOG-IN-5-MINUTES
   ** Make client available everywhere via Nuxt plugins
