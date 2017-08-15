@@ -39,8 +39,13 @@ div
   // </header>
 
   app-process
-
+  
   app-events
+  
+  section.bg-white
+    .mw9.center.ph3.ph4-ns.pv5.pv6-ns
+      app-heading.tc(size='4' text='"Many experienced adult coders more than willing to help the kids....thank you!"' custom-class='gray')
+      app-heading.tc(size='4' text='"Making the website and solving mazes were my favourite."' custom-class='gray')
 
   section.bg-lg-cyan
     .mw9.center.ph3.ph4-ns.pv5.pv6-ns
