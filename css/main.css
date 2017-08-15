@@ -70,6 +70,9 @@ pre {
 .bg-lg-purple      { background: linear-gradient(135deg, #476892 10%,#59355D 100%); }
 .bg-lg-solid-vault { background: linear-gradient(45deg, #3a6073, #3a7bd5); }
 .bg-lg-sunset      { background: linear-gradient(45deg,#FBCA88,#EF69AD); }
+.bg-lg-titanium    { background: linear-gradient(45deg,#283048,#859398); } 
+.bg-lg-mirage      { background: linear-gradient(45deg,#16222A,#3A6073); } 
+
 
 .grid { display: grid; }
 .grid-repeat-3 { grid: repeat(3, auto) / auto-flow 1fr; }

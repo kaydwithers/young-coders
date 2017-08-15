@@ -7,10 +7,10 @@ div
         app-heading(size='2' :text='page.fields.heading')
         app-paragraph(size='4' :text='page.fields.content' custom-class='black-50 lh-2 mb0')
 
-  .bg-lg-blue-light
+  .bg-lg-mirage
     .mw9.center.ph3.ph4-ns.pv6
       .w-100
-        form.black-50(
+        form.white-90(
           action='https://formspree.io/kaydwithers@gmail.com' 
           method='POST' 
           name='contact' 
@@ -35,7 +35,7 @@ div
 
           .mb4.f5
             label.b.db.mb3(for='message') Message 
-              span.normal.black-60 (optional)
+              span.normal.white-60 (optional)
             textarea#message.input-reset.ba.b--black-20.pa3.db.w-100.h4(
               name='message' placeholder='Your message'
             )
