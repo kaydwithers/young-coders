@@ -11,7 +11,7 @@ div
     .mw9.center.ph3.ph4-ns.pv6
       .w-100
         form.black-50(
-          action='thank-you' 
+          action='/success' 
           name='contact' 
           data-netlify-honeypot='bot-field' 
           data-netlify='true'
