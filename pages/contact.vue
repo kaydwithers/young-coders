@@ -18,7 +18,7 @@ div
 
           // input(type='hidden' name='_next' value='/success')
           input(type='hidden' name='_subject' value='New Young Coders Form Submission!')
-          input(type='hidden' name='_cc' value='kayd.withers@isobar.com')
+          input(type='hidden' name='_cc' value='hello@youngcodersau.com,kayd.withers@isobar.com')
 
           .dn
             input(type='text' name='_gotcha')
@@ -27,13 +27,13 @@ div
           .mb4.f5
             label.b.db.mb3(for='name') Name
             input#name.input-reset.ba.b--black-20.pa3.db.w-100(
-              type='text' name='name' placeholder='Your name' required
+              type='text' name='name' placeholder='Your name' required=''
             )
 
           .mb4.f5
             label.b.db.mb3(for='_replyto') Email
             input#email.input-reset.ba.b--black-20.pa3.db.w-100(
-              type='email' name='_replyto' placeholder='Your email' required
+              type='email' name='_replyto' placeholder='Your email' required=''
             )
             //small.f6.black-60.db.mt3(id='name-desc') Helper text for the form control.
 
@@ -41,7 +41,7 @@ div
             label.b.db.mb3(for='message') Message 
               span.normal.black-60 (optional)
             textarea#message.input-reset.ba.b--black-20.pa3.db.w-100.h4(
-              name='message' placeholder='Your message' required
+              name='message' placeholder='Your message' required=''
             )
 
           input.f4.pointer.pa3.b0.dib.bn.br3.black(
