@@ -7,43 +7,43 @@ div
         app-heading(size='2' :text='page.fields.heading')
         app-paragraph(size='4' :text='page.fields.content' custom-class='black-50 lh-2 mb0')
 
-  //- .bg-lg-blue-light
-  //-   .mw9.center.ph3.ph4-ns.pv6
-  //-     .w-100
-  //-       form.black-50(
-  //-         action='thank-you' 
-  //-         name='contact' 
-  //-         netlify-honeypot='bot-field' 
-  //-         netlify
-  //-       )
+  .bg-lg-blue-light
+    .mw9.center.ph3.ph4-ns.pv6
+      .w-100
+        form.black-50(
+          action='thank-you' 
+          name='contact' 
+          data-netlify-honeypot='bot-field' 
+          data-netlify='true'
+        )
 
-  //-         .dn
-  //-           label(for='bot-field') Don't fill this out.
-  //-           input(name='bot-field')
+          .dn
+            label(for='bot-field') Don't fill this out.
+            input(name='bot-field')
 
-  //-         .mb4.f5
-  //-           label.b.db.mb3(for='name') Name
-  //-           input#name.input-reset.ba.b--black-20.pa3.db.w-100(
-  //-             type='text' name='name' placeholder='Your name'
-  //-           )
+          .mb4.f5
+            label.b.db.mb3(for='name') Name
+            input#name.input-reset.ba.b--black-20.pa3.db.w-100(
+              type='text' name='name' placeholder='Your name'
+            )
 
-  //-         .mb4.f5
-  //-           label.b.db.mb3(for='email') Email
-  //-           input#email.input-reset.ba.b--black-20.pa3.db.w-100(
-  //-             type='text' name='email' placeholder='Your email'
-  //-           )
-  //-           //small.f6.black-60.db.mt3(id='name-desc') Helper text for the form control.
+          .mb4.f5
+            label.b.db.mb3(for='email') Email
+            input#email.input-reset.ba.b--black-20.pa3.db.w-100(
+              type='text' name='email' placeholder='Your email'
+            )
+            //small.f6.black-60.db.mt3(id='name-desc') Helper text for the form control.
 
-  //-         .mb4.f5
-  //-           label.b.db.mb3(for='message') Message 
-  //-             span.normal.black-60 (optional)
-  //-           textarea#message.input-reset.ba.b--black-20.pa3.db.w-100.h4(
-  //-             name='message' placeholder='Your message'
-  //-           )
+          .mb4.f5
+            label.b.db.mb3(for='message') Message 
+              span.normal.black-60 (optional)
+            textarea#message.input-reset.ba.b--black-20.pa3.db.w-100.h4(
+              name='message' placeholder='Your message'
+            )
 
-  //-         input.f4.pointer.pa3.b0.dib.bn.br3.black(
-  //-             type="submit" class="form-control submit" value="SEND MESSAGE"
-  //-         )
+          input.f4.pointer.pa3.b0.dib.bn.br3.black(
+            type="submit" class="form-control submit" value="Send message"
+          )
 
 </template>
 

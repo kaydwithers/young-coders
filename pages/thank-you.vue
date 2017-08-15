@@ -5,7 +5,7 @@ div
     .mw9.center.ph3.ph4-ns.pv6
       .w-100.tc
         form(name='thanks')
-          app-paragraph(size='4' text='Thank you for contacting us. We will get back to you soon.')
+          app-paragraph(size='4' text='Thanks for contacting us. We will get back to you soon.')
           app-button(primary destination='/' text='Home')
 
 </template>

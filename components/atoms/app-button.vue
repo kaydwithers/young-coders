@@ -1,8 +1,8 @@
 <template lang="pug">
-button.pointer.f5.f4-ns.pa3.b0.dib.bn.br3.dim(
+a.pointer.f5.f4-ns.b0.dib.bn.br3.dim.pa3.link.white.hover-white(
+  :href='destination' 
   :class="{ 'bg-app-orange': secondary, 'bg-blue': primary }"
-)
-  a.link.white.hover-white(:href='destination') {{ text }}
+) {{ text }}
 </template>
 
 <script>
