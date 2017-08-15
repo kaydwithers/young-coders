@@ -16,7 +16,7 @@ div
           name='contact' 
         )
 
-          input(type='hidden' name='_next' value='/success')
+          // input(type='hidden' name='_next' value='/success')
           input(type='hidden' name='_subject' value='New Young Coders Form Submission!')
           input(type='hidden' name='_cc' value='kayd.withers@isobar.com')
 
