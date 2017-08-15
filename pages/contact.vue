@@ -16,9 +16,13 @@ div
           name='contact' 
         )
 
+          input(type='hidden' name='_next' value='/success')
+          input(type='hidden' name='_subject' value='New Young Coders Form Submission!')
+          input(type='hidden' name='_cc' value='hello@youngcodersau.com,kayd.withers@isobar.com')
+
           .dn
-            label(for='bot-field') Don't fill this out.
-            input(name='bot-field')
+            input(type='text' name='_gotcha')
+
 
           .mb4.f5
             label.b.db.mb3(for='name') Name
