@@ -1,6 +1,6 @@
 {
   "name": "young-coders",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A static blog based on Contentful",
   "author": "kayd withers <kaydwithers@gmail.com>",
   "private": true,
