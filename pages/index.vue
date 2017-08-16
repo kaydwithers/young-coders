@@ -57,17 +57,17 @@ div
 </template>
 
 <script>
-import {createClient} from '~plugins/contentful.js'
-import ArticlePreview from '~components/article-preview.vue'
-import appAvatars from '~components/organisms/app-avatars'
-import appHeading from '~components/atoms/app-heading'
-import appHero from '~components/organisms/app-hero'
-import appIntroduction from '~components/organisms/app-introduction'
-import appParagraph from '~components/atoms/app-paragraph'
-import appProcess from '~components/organisms/app-process'
-import appEvents from '~components/organisms/app-events'
-import appSupporters from '~components/organisms/app-supporters'
-import appTestimonials from '~components/organisms/app-testimonials'
+import {createClient} from '~/plugins/contentful.js'
+import ArticlePreview from '~/components/article-preview.vue'
+import appAvatars from '~/components/organisms/app-avatars'
+import appHeading from '~/components/atoms/app-heading'
+import appHero from '~/components/organisms/app-hero'
+import appIntroduction from '~/components/organisms/app-introduction'
+import appParagraph from '~/components/atoms/app-paragraph'
+import appProcess from '~/components/organisms/app-process'
+import appEvents from '~/components/organisms/app-events'
+import appSupporters from '~/components/organisms/app-supporters'
+import appTestimonials from '~/components/organisms/app-testimonials'
 
 const client = createClient()
 

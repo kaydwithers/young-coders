@@ -10,8 +10,8 @@ div
 <script>
   import appFooter from '~/components/organisms/app-footer'
   import appHero from '~/components/organisms/app-hero'
-  import appNavigation from '~components/organisms/app-navigation.vue'
-  import appNavigationLinks from '~components/molecules/app-navigation-links.vue'
+  import appNavigation from '~/components/organisms/app-navigation.vue'
+  import appNavigationLinks from '~/components/molecules/app-navigation-links.vue'
 
   export default {
     components: {

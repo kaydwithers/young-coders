@@ -17,12 +17,12 @@
 </template>
 
 <script>
-import {createClient} from '~plugins/contentful.js'
-import appAvatars from '~components/organisms/app-avatars'
-import appHeading from '~components/atoms/app-heading'
-import appHero from '~components/organisms/app-hero'
-import appParagraph from '~components/atoms/app-paragraph'
-import appTest from '~components/app-test'
+import {createClient} from '~/plugins/contentful.js'
+import appAvatars from '~/components/organisms/app-avatars'
+import appHeading from '~/components/atoms/app-heading'
+import appHero from '~/components/organisms/app-hero'
+import appParagraph from '~/components/atoms/app-paragraph'
+import appTest from '~/components/app-test'
 
 const client = createClient()
 

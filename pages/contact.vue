@@ -51,10 +51,10 @@
 </template>
 
 <script>
-import {createClient} from '~plugins/contentful.js'
-import appHeading from '~components/atoms/app-heading'
-import appHero from '~components/organisms/app-hero'
-import appParagraph from '~components/atoms/app-paragraph'
+import {createClient} from '~/plugins/contentful.js'
+import appHeading from '~/components/atoms/app-heading'
+import appHero from '~/components/organisms/app-hero'
+import appParagraph from '~/components/atoms/app-paragraph'
 
 const client = createClient()
 

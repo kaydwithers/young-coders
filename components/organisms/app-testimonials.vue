@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import appButton from '~components/atoms/app-button'
-import appHeading from '~components/atoms/app-heading'
-import appParagraph from '~components/atoms/app-paragraph'
+import appButton from '~/components/atoms/app-button'
+import appHeading from '~/components/atoms/app-heading'
+import appParagraph from '~/components/atoms/app-paragraph'
 
 export default {
   name: 'app-events',
