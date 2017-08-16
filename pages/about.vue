@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+.about
   app-hero(:hero='hero' text='About us' hero-small)
   .bg-white
     .mw9.center.ph3.ph4-ns.pv6
@@ -17,12 +17,12 @@ div
 </template>
 
 <script>
-import {createClient} from '~/plugins/contentful.js'
-import appAvatars from '~/components/organisms/app-avatars'
-import appHeading from '~/components/atoms/app-heading'
-import appHero from '~/components/organisms/app-hero'
-import appParagraph from '~/components/atoms/app-paragraph'
-import appTest from '~/components/app-test'
+import {createClient} from '~plugins/contentful.js'
+import appAvatars from '~components/organisms/app-avatars'
+import appHeading from '~components/atoms/app-heading'
+import appHero from '~components/organisms/app-hero'
+import appParagraph from '~components/atoms/app-paragraph'
+import appTest from '~components/app-test'
 
 const client = createClient()
 

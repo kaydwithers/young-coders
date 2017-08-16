@@ -46,8 +46,8 @@ nav.app-navigation.nav-expand
 <script>
 import { mapMutations } from 'vuex'
 
-import appHamburger from '~/components/atoms/app-hamburger'
-import appNavigationLinks from '~/components/molecules/app-navigation-links'
+import appHamburger from '~components/atoms/app-hamburger'
+import appNavigationLinks from '~components/molecules/app-navigation-links'
 
 export default {
   name: 'app-navigation',

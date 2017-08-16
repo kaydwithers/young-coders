@@ -18,11 +18,11 @@
 </template>
 
 <script>
-import {createClient} from '~/plugins/contentful.js'
+import {createClient} from '~plugins/contentful.js'
 import ArticlePreview from '~components/article-preview.vue'
-import appHeading from '~/components/atoms/app-heading'
-import appHero from '~/components/organisms/app-hero'
-import appParagraph from '~/components/atoms/app-paragraph'
+import appHeading from '~components/atoms/app-heading'
+import appHero from '~components/organisms/app-hero'
+import appParagraph from '~components/atoms/app-paragraph'
 
 const client = createClient()
 

@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+.contact
   app-hero(:hero='hero' text='Contact us' hero-small)
   .bg-white
     .mw9.center.ph3.ph4-ns.pv6
@@ -39,7 +39,7 @@ div
 
           .mb4.f5
             label.b.db.mb3(for='message') Message 
-              span.normal.white-60 (optional)
+              // span.normal.white-60 (optional)
             textarea#message.input-reset.ba.b--black-20.pa3.db.w-100.h4(
               name='message' placeholder='Your message' required=''
             )
@@ -51,10 +51,10 @@ div
 </template>
 
 <script>
-import {createClient} from '~/plugins/contentful.js'
-import appHeading from '~/components/atoms/app-heading'
-import appHero from '~/components/organisms/app-hero'
-import appParagraph from '~/components/atoms/app-paragraph'
+import {createClient} from '~plugins/contentful.js'
+import appHeading from '~components/atoms/app-heading'
+import appHero from '~components/organisms/app-hero'
+import appParagraph from '~components/atoms/app-paragraph'
 
 const client = createClient()
 

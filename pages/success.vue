@@ -11,16 +11,16 @@ div
 </template>
 
 <script>
-import {createClient} from '~/plugins/contentful.js'
-import appButton from '~/components/atoms/app-button'
-import appHeading from '~/components/atoms/app-heading'
-import appHero from '~/components/organisms/app-hero'
-import appParagraph from '~/components/atoms/app-paragraph'
+import {createClient} from '~plugins/contentful.js'
+import appButton from '~components/atoms/app-button'
+import appHeading from '~components/atoms/app-heading'
+import appHero from '~components/organisms/app-hero'
+import appParagraph from '~components/atoms/app-paragraph'
 
 const client = createClient()
 
 export default {
-  name: 'about',
+  name: 'sucess',
   asyncData ({ params }) {
     return Promise.all([
       client.getEntries({

@@ -4,8 +4,8 @@
     .mw9.center.ph3.ph4-ns.pv5.pv6-ns.tc
       app-heading(size='2' text='Our Supporters')
 
-      .db.flex-ns.justify-center.flex-wrap.pt3
-        .w-100.w-20-ns.ph5
+      .db.flex-ns.justify-center.flex-wrap.pt3-ns
+        .center.w-40.w-30-m.w-10-l
           a.logo-isobar.dim(href='https://www.isobar.com/au/en/')
             svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 543.365 157.566')
               path(fill-rule='evenodd' clip-rule='evenodd' fill='currentColor' d='M490.91 155.253V45.868l24.95.158V57.26l-.106 3.216c1.385-5.75 10.617-15.542 27.61-16.757v26.277c-12.444.777-26.085 4.453-26.524 23.332h-.045v61.923H490.91zM197.61 157.533c-31.278 0-56.728-25.448-56.728-56.728s25.45-56.727 56.727-56.727c31.278 0 56.726 25.447 56.726 56.727s-25.447 56.728-56.727 56.728zm.874-88.583c-17.566 0-31.855 14.29-31.855 31.854 0 17.566 14.288 31.857 31.854 31.857 17.564 0 31.854-14.29 31.854-31.856 0-17.565-14.29-31.854-31.854-31.854zM318.564 157.566c-13.107-.216-21.998-3.025-31.107-11.716l.205-.128-.627 9.615H263.19V25.805L289.07 0l-.078 55.504.05-.153c6.75-6.5 17.665-11.25 30.083-11.238h.275c28.633 0 52.822 25.978 52.822 56.727 0 14.825-5.896 29.053-16.602 40.062-10.22 10.51-23.53 16.583-36.514 16.664h-.542zm-3.068-88.583c-10.416 0-20.197 5.116-26.16 13.688l-.262.376v35.585l.262.376c5.963 8.572 15.744 13.688 26.16 13.688 17.564 0 31.854-14.29 31.854-31.857 0-17.565-14.29-31.854-31.854-31.854z')
@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import appHeading from '~/components/atoms/app-heading'
-import appParagraph from '~/components/atoms/app-paragraph'
+import appHeading from '~components/atoms/app-heading'
+import appParagraph from '~components/atoms/app-paragraph'
 
 export default {
   name: 'app-supporters',

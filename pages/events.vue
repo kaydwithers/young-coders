@@ -1,15 +1,15 @@
 <template lang="pug">
-div
+.events
   app-hero(:hero='hero' text='Events' hero-small)
   app-events
 </template>
 
 <script>
-import {createClient} from '~/plugins/contentful.js'
-import appHero from '~/components/organisms/app-hero'
-import appHeading from '~/components/atoms/app-heading'
-import appParagraph from '~/components/atoms/app-paragraph'
-import appEvents from '~/components/organisms/app-events'
+import {createClient} from '~plugins/contentful.js'
+import appHero from '~components/organisms/app-hero'
+import appHeading from '~components/atoms/app-heading'
+import appParagraph from '~components/atoms/app-paragraph'
+import appEvents from '~components/organisms/app-events'
 
 const client = createClient()
 

@@ -42,10 +42,7 @@ div
   
   app-events
   
-  section.bg-white
-    .mw9.center.ph3.ph4-ns.pv5.pv6-ns
-      app-heading.tc(size='4' text='"Many experienced adult coders more than willing to help the kids....thank you!"' custom-class='gray')
-      app-heading.tc(size='4' text='"Making the website and solving mazes were my favourite."' custom-class='gray')
+  app-testimonials
 
   section.bg-lg-cyan
     .mw9.center.ph3.ph4-ns.pv5.pv6-ns
@@ -53,7 +50,7 @@ div
 
       .db.flex-ns.justify-center
         .w-100.w-50-m.w-third-l(v-for='post in posts')
-          article-preview(:post="post")
+          article-preview(:post='post')
 
   app-supporters
 
@@ -62,14 +59,15 @@ div
 <script>
 import {createClient} from '~plugins/contentful.js'
 import ArticlePreview from '~components/article-preview.vue'
-import appAvatars from '~/components/organisms/app-avatars'
-import appHeading from '~/components/atoms/app-heading'
-import appHero from '~/components/organisms/app-hero'
-import appIntroduction from '~/components/organisms/app-introduction'
-import appParagraph from '~/components/atoms/app-paragraph'
-import appProcess from '~/components/organisms/app-process'
-import appEvents from '~/components/organisms/app-events'
-import appSupporters from '~/components/organisms/app-supporters'
+import appAvatars from '~components/organisms/app-avatars'
+import appHeading from '~components/atoms/app-heading'
+import appHero from '~components/organisms/app-hero'
+import appIntroduction from '~components/organisms/app-introduction'
+import appParagraph from '~components/atoms/app-paragraph'
+import appProcess from '~components/organisms/app-process'
+import appEvents from '~components/organisms/app-events'
+import appSupporters from '~components/organisms/app-supporters'
+import appTestimonials from '~components/organisms/app-testimonials'
 
 const client = createClient()
 
@@ -108,7 +106,8 @@ export default {
     appParagraph,
     appProcess,
     appEvents,
-    appSupporters
+    appSupporters,
+    appTestimonials
   }
 }
 </script>

@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import appHeading from '~/components/atoms/app-heading'
-import appParagraph from '~/components/atoms/app-paragraph'
-import appButton from '~/components/atoms/app-button'
+import appHeading from '~components/atoms/app-heading'
+import appParagraph from '~components/atoms/app-paragraph'
+import appButton from '~components/atoms/app-button'
 
 export default {
   name: 'app-introduction',
