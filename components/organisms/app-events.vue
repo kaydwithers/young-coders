@@ -9,7 +9,7 @@
         .w-100.w-50-m.w-third-l.ph4-ns.tc(v-for='event in upcoming_events')
           app-paragraph(size='6' :text='event.datetime')
           img.db.ba.bw1.b--black-10.mb4(:src='event.image')
-          app-heading(size='4' :text='event.name')
+          app-heading(size='3' :text='event.name')
           app-paragraph(size='6' :text='event.location')
           app-paragraph(size='5' :text='event.description') 
           app-button(primary destination='https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink' text='Click to Register')
@@ -20,10 +20,10 @@
 
       .db.flex-ns.justify-center
         .w-100.w-50-m.w-third-l.ph4-ns.tc.mb4.mb0-ns(v-for='event in past_events')
+          app-paragraph(size='6' :text='event.datetime' custom-class='white-70 mb4')
           img.db.ba.bw3.b--black-10.mb4(:src='event.image')
-          app-heading(size='4' :text='event.name' custom-class='white')
+          app-heading(size='3' :text='event.name' custom-class='white')
           app-paragraph(size='6' :text='event.description' custom-class='white-70 lh-2')
-          app-paragraph(size='5' :text='event.datetime' custom-class='white-70 lh-2')
           app-paragraph(size='5' :text='event.location' custom-class='white-70 lh-2 mb0')
 
 </template>

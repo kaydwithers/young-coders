@@ -64,7 +64,7 @@ const config = {
   },
 
   modules: [
-    ['@nuxtjs/google-analytics', { ua: 'UA-104501170-1' }],
+    ['@nuxtjs/google-analytics', { ua: 'UA-104501170-1' }]
   ],
 
   /*
@@ -72,8 +72,7 @@ const config = {
   ** Make client available everywhere via Nuxt plugins
   */
   plugins: [
-    '~plugins/contentful'
-    // { src: '~plugins/ga', ssr: false }
+    '~/plugins/contentful'
   ],
 
   /*
