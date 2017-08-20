@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+.home
   app-hero(:hero='hero' text="Coding workshops<br />for kids and all ages")
 
   app-introduction(:introduction='introduction')
@@ -54,6 +54,8 @@ div
 
   app-supporters
 
+  twitter-head-card
+
 </template>
 
 <script>
@@ -68,6 +70,7 @@ import appProcess from '~/components/organisms/app-process'
 import appEvents from '~/components/organisms/app-events'
 import appSupporters from '~/components/organisms/app-supporters'
 import appTestimonials from '~/components/organisms/app-testimonials'
+import twitterHeadCard from '~/components/atoms/twitter-head-card'
 
 const client = createClient()
 
@@ -116,7 +119,8 @@ export default {
     appProcess,
     appEvents,
     appSupporters,
-    appTestimonials
+    appTestimonials,
+    twitterHeadCard
   }
 }
 </script>
