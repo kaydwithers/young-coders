@@ -14,6 +14,8 @@
 
   // app-test
 
+  twitter-head-card
+
 </template>
 
 <script>
@@ -23,6 +25,7 @@ import appHeading from '~/components/atoms/app-heading'
 import appHero from '~/components/organisms/app-hero'
 import appParagraph from '~/components/atoms/app-paragraph'
 import appTest from '~/components/app-test'
+import twitterHeadCard from '~/components/atoms/twitter-head-card'
 
 const client = createClient()
 
@@ -45,12 +48,21 @@ export default {
       }
     }).catch(console.error)
   },
+
+  head: {
+    title: 'Young Coders ʕ•ᴥ•ʔ — About',
+    meta: [
+      { hid: 'description', name: 'description', content: 'About' }
+    ]
+  },
+
   components: {
     appAvatars,
     appHeading,
     appHero,
     appParagraph,
-    appTest
+    appTest,
+    twitterHeadCard
   }
 }
 </script>

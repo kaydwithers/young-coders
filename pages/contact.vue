@@ -48,6 +48,8 @@
             type="submit" class="form-control submit" value="Send"
           )
 
+  twitter-head-card
+
 </template>
 
 <script>
@@ -55,11 +57,20 @@ import {createClient} from '~/plugins/contentful.js'
 import appHeading from '~/components/atoms/app-heading'
 import appHero from '~/components/organisms/app-hero'
 import appParagraph from '~/components/atoms/app-paragraph'
+import twitterHeadCard from '~/components/atoms/twitter-head-card'
 
 const client = createClient()
 
 export default {
   name: 'contact',
+
+  head: {
+    title: 'Young Coders ʕ•ᴥ•ʔ — Contact',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Contact' }
+    ]
+  },
+
   asyncData ({env}) {
     return Promise.all([
       // fetch all pages sorted by creation date
@@ -84,7 +95,8 @@ export default {
   components: {
     appHeading,
     appHero,
-    appParagraph
+    appParagraph,
+    twitterHeadCard
   }
 }
 </script>

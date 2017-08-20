@@ -72,6 +72,14 @@ import appTestimonials from '~/components/organisms/app-testimonials'
 const client = createClient()
 
 export default {
+
+  head: {
+    title: 'Young Coders ʕ•ᴥ•ʔ — Home',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Coding workshops for kids and all ages' }
+    ]
+  },
+
   asyncData ({env}) {
     return Promise.all([
       client.getEntries({
@@ -97,6 +105,7 @@ export default {
       }
     }).catch(console.error)
   },
+
   components: {
     ArticlePreview,
     appAvatars,
