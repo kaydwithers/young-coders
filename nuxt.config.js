@@ -18,7 +18,7 @@ const config = {
   ** Headers of the page
   */
   head: {
-    title: 'Young Coders — Coding Workshops',
+    title: 'Young Coders ʕ•ᴥ•ʔ — Coding Workshops',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -31,6 +31,14 @@ const client = createClient()
 
 export default {
   name: 'about',
+
+  head: {
+    title: 'Young Coders ʕ•ᴥ•ʔ — About',
+    meta: [
+      { hid: 'description', name: 'description', content: 'About' }
+    ]
+  },
+
   asyncData ({ params }) {
     return Promise.all([
       client.getEntries({
@@ -47,13 +55,6 @@ export default {
         page: page.items[4]
       }
     }).catch(console.error)
-  },
-
-  head: {
-    title: 'Young Coders ʕ•ᴥ•ʔ — About',
-    meta: [
-      { hid: 'description', name: 'description', content: 'About' }
-    ]
   },
 
   components: {

@@ -14,7 +14,7 @@ export default {
       { name: 'twitter:site', content: 'youngcodersau.com' },
       { name: 'twitter:title', content: 'Young Coders ʕ•ᴥ•ʔ' },
       { name: 'twitter:description', content: 'Coding workshops for kids and all ages' },
-      { name: 'twitter:image', content: 'https://avatars0.githubusercontent.com/u/23360933?v=3' },
+      { name: 'twitter:image', content: '/assets/young-coders-share' },
       { name: 'twitter:image:alt', content: 'Young Coders logo' }
     ]
   }
