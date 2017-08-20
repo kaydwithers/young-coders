@@ -1,7 +1,8 @@
 <template lang="pug">
 a.pointer.f5.f4-ns.b0.dib.bn.br3.dim.pa3.link.white.hover-white(
   :href='destination' 
-  :class="{ 'bg-app-orange': secondary, 'bg-blue': primary }"
+  :class="{ 'bg-app-orange': secondary, 'bg-blue': primary }" 
+  :target="target" 
 ) {{ text }}
 </template>
 
@@ -12,7 +13,8 @@ export default {
     text: { default: '[PH] Button' },
     destination: { default: '' },
     primary: { default: false },
-    secondary: { default: false }
+    secondary: { default: false },
+    target: { default: false }
   }
 }
 </script>

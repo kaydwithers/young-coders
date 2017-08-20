@@ -12,7 +12,12 @@
           app-heading(size='3' :text='event.name')
           app-paragraph(size='6' :text='event.location')
           app-paragraph(size='5' :text='event.description') 
-          app-button(primary destination='https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink' text='Click to Register')
+          app-button(
+            primary 
+            destination='https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink' 
+            target="_blank"
+            text='Click to Register'
+          )
 
   .bg-lg-titanium
     .mw9.center.ph3.ph4-ns.pv5.pv6-ns
