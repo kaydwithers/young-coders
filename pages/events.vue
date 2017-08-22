@@ -2,6 +2,9 @@
 .events
   app-hero(:hero='hero' text='Events' hero-small)
   app-events
+
+  twitter-head-card
+
 </template>
 
 <script>
@@ -10,11 +13,20 @@ import appHero from '~/components/organisms/app-hero'
 import appHeading from '~/components/atoms/app-heading'
 import appParagraph from '~/components/atoms/app-paragraph'
 import appEvents from '~/components/organisms/app-events'
+import twitterHeadCard from '~/components/atoms/twitter-head-card'
 
 const client = createClient()
 
 export default {
   name: 'events',
+
+  head: {
+    title: 'Young Coders ʕ•ᴥ•ʔ — Events',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Events' }
+    ]
+  },
+
   asyncData ({ params }) {
     return Promise.all([
       client.getEntries({
@@ -32,11 +44,13 @@ export default {
       }
     }).catch(console.error)
   },
+
   components: {
     appHero,
     appHeading,
     appParagraph,
-    appEvents
+    appEvents,
+    twitterHeadCard
   }
 }
 </script>

@@ -15,6 +15,8 @@
         .w-100.w-50-m.w-third-l(v-for='post in posts')
           article-preview(:post="post")
 
+  twitter-head-card
+
 </template>
 
 <script>
@@ -23,10 +25,20 @@ import ArticlePreview from '~/components/article-preview.vue'
 import appHeading from '~/components/atoms/app-heading'
 import appHero from '~/components/organisms/app-hero'
 import appParagraph from '~/components/atoms/app-paragraph'
+import twitterHeadCard from '~/components/atoms/twitter-head-card'
 
 const client = createClient()
 
 export default {
+  name: 'blog',
+
+  head: {
+    title: 'Young Coders ʕ•ᴥ•ʔ — Blog',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Blog' }
+    ]
+  },
+
   asyncData ({ env, params }) {
     return Promise.all([
       client.getEntries({
@@ -49,7 +61,8 @@ export default {
     ArticlePreview,
     appHeading,
     appHero,
-    appParagraph
+    appParagraph,
+    twitterHeadCard
   }
 }
 </script>

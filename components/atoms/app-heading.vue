@@ -1,21 +1,10 @@
 <template lang="pug">
-h1.f2.f1-ns.lh-1-5(v-if="size === '1'" :class="customClass")
-  vue-markdown(v-html='text')
-
-h2.f3.f2-ns.lh-title(v-else-if="size === '2'" :class="customClass")
-  vue-markdown(v-html='text')
-
-h3.f4.f3-ns.lh-title(v-else-if="size === '3'" :class="customClass")
-  vue-markdown(v-html='text')
-
-h4.f5.f4-ns.lh-title(v-else-if="size === '4'" :class="customClass")
-  vue-markdown(v-html='text')
-
-h5.f6.f5-ns.lh-title(v-else-if="size === '5'" :class="customClass")
-  vue-markdown(v-html='text')
-
-h6.f6.f6-ns.lh-title(v-else-if="size === '6'" :class="customClass")
-  vue-markdown(v-html='text')
+vue-markdown(v-if="size === '1'" :class="customClass") # {{text}}
+vue-markdown(v-else-if="size === '2'" :class="customClass") ## {{text}}
+vue-markdown(v-else-if="size === '3'" :class="customClass") ### {{text}}
+vue-markdown(v-else-if="size === '4'" :class="customClass") #### {{text}}
+vue-markdown(v-else-if="size === '5'" :class="customClass") ##### {{text}}
+vue-markdown(v-else-if="size === '6'" :class="customClass") ###### {{text}}
 </template>
 
 <script>
@@ -34,6 +23,64 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="scss">
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.5;
+  margin-bottom: .5rem;
 
+  @media screen and (min-width: 30em) {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 30em) {
+    font-size: 2.25rem;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 30em) {
+    font-size: 1.5rem;
+  }
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 30em) {
+    font-size: 1.25rem;
+  }
+}
+
+h5 {
+  font-size: .875rem;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 30em) {
+    font-size: 1rem;
+  }
+}
+
+h6 {
+  font-size: .75rem;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 30em) {
+    font-size: .875rem;
+  }
+}
 </style>

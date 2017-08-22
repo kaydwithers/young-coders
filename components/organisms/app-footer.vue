@@ -1,7 +1,7 @@
 <template lang="pug">
 footer.app-footer
   .bg-black-80
-    .pv4.pv6-ns.tc
+    .pv5.pv6-ns.tc
       p.f6.f5-ns.white-50.mb4 © Young Coders ʕ•ᴥ•ʔ
 
       .footer-social 
