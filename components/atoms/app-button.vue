@@ -12,7 +12,7 @@ export default {
   props: {
     text: { default: '[PH] Button' },
     destination: { default: '' },
-    primary: { default: false },
+    primary: { default: true },
     secondary: { default: false },
     target: { default: false }
   }
