@@ -10,11 +10,11 @@ a.pointer.f5.f4-ns.b0.dib.bn.br3.dim.pa3.link.white.hover-white(
 export default {
   name: 'app-button',
   props: {
-    text: { default: '[PH] Button' },
-    destination: { default: '' },
-    primary: { default: true },
-    secondary: { default: false },
-    target: { default: false }
+    text: { type: String, default: '[PH] Button' },
+    destination: { type: String, default: '' },
+    primary: { type: Boolean, default: false },
+    secondary: { type: Boolean, default: false },
+    target: { type: Boolean, default: false }
   }
 }
 </script>

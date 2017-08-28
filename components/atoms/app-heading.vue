@@ -36,7 +36,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  line-height: 1.25;
+  line-height: 1.5;
   margin-bottom: 2rem;
 
   @media screen and (min-width: 30em) {
@@ -46,7 +46,7 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
-  line-height: 1.25;
+  line-height: 1.5;
   margin-bottom: 2rem;
 
   @media screen and (min-width: 30em) {
