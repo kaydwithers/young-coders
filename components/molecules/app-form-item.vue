@@ -6,13 +6,6 @@
 
 <script>
 export default {
-  name: 'app-form-input',
-  props: {
-
-  }
+  name: 'app-form-input'
 }
 </script>
-
-<style>
-
-</style>

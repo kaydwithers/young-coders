@@ -2,7 +2,7 @@
 footer.app-footer
   .bg-black-80
     .pv5.pv6-ns.tc
-      p.f6.f5-ns.white-50.mb4 © Young Coders ʕ•ᴥ•ʔ
+      p.ff-code.f6.f5-ns.white-50.mb4 © Young Coders ʕ•ᴥ•ʔ
 
       .footer-social 
         a.dib.w2.mh3.dim(href='https://www.facebook.com/Young-Coders-1739074226120634/')
