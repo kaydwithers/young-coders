@@ -1,21 +1,21 @@
 <template lang="pug">
 .app-avatars
-  .tc
+  .tc.mb5
     app-heading(size='2' text='Our Team' custom-class='white mb4')
-
     .db.flex-ns.justify-center.flex-wrap
-      .w-100.w-25-ns.ph4.mb4.tc(v-for="avatar in avatars")
-        img.db.ba.br-100.bw3.b--black-10.mb3(:src='avatar.image')
-        app-paragraph(size='4' :text='avatar.name' custom-class='white mb0 lh-1')
+      .w-100.w-25-ns.ph5.mb5.tc(v-for="avatar in avatars")
+        img.db.br-100.mb3(:src='avatar.image')
+        app-paragraph(size='5' :text='avatar.name' custom-class='white mb0 lh-1')
         // app-paragraph(size='6' :text='avatar.description' custom-class='white-70 mb0')
+
   .tc
     app-heading(size='2' text='Our Advisors' custom-class='white mb4')
-
     .db.flex-ns.justify-center.flex-wrap
-      .w-100.w-25-ns.ph4.mb4.tc(v-for="advisor in advisors")
-        img.db.ba.br-100.bw3.b--black-10.mb3(:src='advisor.image')
-        app-paragraph(size='4' :text='advisor.name' custom-class='white mb0 lh-1')
+      .w-100.w-25-ns.ph5.mb5.tc(v-for="advisor in advisors")
+        img.db.br-100.mb3(:src='advisor.image')
+        app-paragraph(size='5' :text='advisor.name' custom-class='white mb0 lh-1')
         // app-paragraph(size='6' :text='avatar.description' custom-class='white-70 mb0')
+
     //- .tc
     //- app-heading(size='2' text='Board Of Directors')
     //- .db.flex-ns

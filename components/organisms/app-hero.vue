@@ -20,7 +20,7 @@
       source(type='video/mp4' :src='videoSource')
 
     .hero__text.pa.w-100.tc.ph3.o-100
-      app-heading(size='1' :text='text' custom-class='white-90 ts-1 mb2')
+      app-heading(size='1' :text='text' custom-class='white ts-1 mb2')
       app-paragraph(v-if='hasParagraph' size='4' :text='hero.fields.content' custom-class='white ts-1')
 
 </template>
