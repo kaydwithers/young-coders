@@ -14,7 +14,7 @@
           app-paragraph(size='5' :text='event.description') 
           app-button(
             primary 
-            destination='https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink' 
+            :destination='event.eventlink' 
             target="_blank"
             text='Click to Register'
           )
@@ -59,16 +59,40 @@ export default {
           location: '25 Glenferrie road, Malvern',
           image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1502802409/young_coders_coding_1011_rqxi3y.jpg',
           eventlink: 'https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink'
+        },
+        {
+          name: 'Cyber Security for Kids',
+          description: '',
+          datetime: '26 August 2017',
+          location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
+          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1502798530/youngcodersau_roebad.png',
+          eventlink: 'https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink'
         }
       ],
       upcoming_events: [
         {
-          name: 'Cyber Security for Kids',
-          description: 'In this workshop we will educate attendees about the good (Education, games, movies, images) and bad (Viruses, scams, online privacy) aspects of the internet and how to stay safe online.',
-          datetime: 'Saturday, 26 August 2017. 12:00 - 2:00pm',
+          name: 'Introduction to Virtual Reality (Advanced Class)',
+          description: 'In this workshop you can expect your Young Coder to learn:<br>(i) what VR is, and what the consumer technology to access VR experiences are like,<br>(ii) creative and educational uses of VR to improve learning outcomes, knowledge and awareness,<br>(iii) the joy and wonders of experiencing the world in 3D, and the use of curiosity to drive learning and development.',
+          datetime: 'Saturday, 9 Sept 2017. 12:00pm - 2:00pm',
+          location: 'Cabrini Technology Group, 99/45 Gilby Road, Mount Waverley 3149',
+          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1504009773/o-VIRTUAL-REALITY-GAMES-facebook11-1920x500_slya54.jpg',
+          eventlink: 'https://www.eventbrite.com.au/e/introduction-to-virtual-reality-advanced-class-tickets-37151724809'
+        },
+        {
+          name: 'Introduction to Computing',
+          description: 'Bring your Young Coders along on a magical adventure with Moana and her friends. They will use drag-and-drop visual blocks to write code that is part of a game. Visual programming is a fun and easily understood way to teach the logic of coding, and a great way to get "hooked" on the skills of today and tomorrow.',
+          datetime: 'Saturday, 23 Sept 2017. 12:00pm - 2:00pm',
+          location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
+          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1504009768/738645_nopp0p.jpg',
+          eventlink: 'https://www.eventbrite.com.au/e/introduction-to-computing-tickets-37151665632'
+        },
+        {
+          name: 'Coding 101: Building a Static Website',
+          description: 'This is going to be a basics of website development. Kids will be able to make their very first website step by step. If your kid has been to our previous workshops, its fine as this workshop is going to be very different than last one and they will learn more about HTML and making websites.',
+          datetime: 'Saturday, 7 Oct 2017. 12:00pm - 2:00pm',
           location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
           image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1502798530/youngcodersau_roebad.png',
-          eventlink: 'https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink'
+          eventlink: 'https://www.eventbrite.com.au/e/coding-101-building-a-static-website-tickets-37413791658'
         }
       ]
     }
