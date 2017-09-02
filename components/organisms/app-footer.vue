@@ -20,12 +20,7 @@ footer.app-footer
 </template>
 
 <script>
-import appParagraph from '~/components/atoms/app-paragraph'
-
 export default {
-  name: 'app-footer',
-  components: {
-    appParagraph
-  }
+  name: 'app-footer'
 }
 </script>

@@ -5,7 +5,7 @@
     .mw9.center.ph3.ph4-ns.pv6
       .w-100
         app-heading(size='2' :text='page.fields.heading')
-        app-paragraph(size='4' :text='page.fields.content' custom-class='black-50 lh-2 mb0')
+        vue-markdown.p4.mb0 {{page.fields.content}}
 
   .bg-lg-mirage
     .mw9.center.ph3.ph4-ns.pv6
@@ -58,6 +58,7 @@ import appHeading from '~/components/atoms/app-heading'
 import appHero from '~/components/organisms/app-hero'
 import appParagraph from '~/components/atoms/app-paragraph'
 import twitterHeadCard from '~/components/atoms/twitter-head-card'
+import VueMarkdown from 'vue-markdown'
 
 const client = createClient()
 
@@ -96,7 +97,8 @@ export default {
     appHeading,
     appHero,
     appParagraph,
-    twitterHeadCard
+    twitterHeadCard,
+    VueMarkdown
   }
 }
 </script>

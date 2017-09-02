@@ -14,7 +14,7 @@ export default {
   name: 'app-heading',
   props: {
     text: { default: '[PH] Heading' },
-    customClass: { default: 'black-70 mb4' },
+    customClass: { default: 'black-70' },
     size: { default: '1' }
   },
   components: {

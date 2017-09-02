@@ -7,14 +7,14 @@ article.article-preview
       sizes="(min-width: 1024px) 400px, 100vw"
     )
 
-    app-paragraph(size='6' :text='( new Date(post.fields.publishDate)).toDateString()' custom-class='white-70 lh-2')
+    .p6.white-70(v-text='( new Date(post.fields.publishDate)).toDateString()')
 
     h3
       nuxt-link.db.f3.lh-copy.fw6.mb4.link.white(
         :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}"
       ) {{ post.fields.title }}
 
-    app-paragraph(size='5' :text='post.fields.description' custom-class='white lh-2 mb4')
+    .p5.white.mb4(v-text='post.fields.description')
 
     nuxt-link(
       v-for='tag in post.fields.tags'
@@ -24,13 +24,11 @@ article.article-preview
 
 <script>
 import appHeading from '~/components/atoms/app-heading'
-import appParagraph from '~/components/atoms/app-paragraph'
 
 export default {
   props: ['post'],
   components: {
-    appHeading,
-    appParagraph
+    appHeading
   }
 }
 </script>

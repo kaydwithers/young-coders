@@ -1,4 +1,4 @@
-<template lang='pug'>
+<template lang="pug">
 .app-supporters
   .tc
     .mw9.center.ph3.ph4-ns.pv5.pv6-ns.tc
@@ -37,13 +37,11 @@
 
 <script>
 import appHeading from '~/components/atoms/app-heading'
-import appParagraph from '~/components/atoms/app-paragraph'
 
 export default {
   name: 'app-supporters',
   components: {
-    appHeading,
-    appParagraph
+    appHeading
   }
 }
 </script>

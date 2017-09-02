@@ -11,13 +11,13 @@
     .mw9.center.ph3.ph4-ns.pv6
       .w-100
 
-        app-paragraph(size='6' :text='( new Date(post.fields.publishDate)).toDateString()')
+        .p6(v-text='( new Date(post.fields.publishDate)).toDateString()')
 
         h1.db.f3.f2-ns.lh-copy.fw6.mb4(
           :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}"
         ) {{ post.fields.title }}
 
-        app-paragraph(size='5' :text='post.fields.body')
+        vue-markdown.p5 {{post.fields.body}}
 
 </template>
 

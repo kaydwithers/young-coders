@@ -5,7 +5,7 @@
     .mw9.center.ph3.ph4-ns.pv6
       .w-100
         app-heading(size='2' text='Blog')
-        app-paragraph(size='3' :text="'All articles' + ' (' + posts.length + ')'")
+        .p4.mb0(v-html="'All articles' + ' (' + posts.length + ')'")
 
   .bg-lg-purple
     .mw9.center.ph3.ph4-ns.pv5.pv6-ns

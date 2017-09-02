@@ -4,15 +4,14 @@
     .mw9.center.ph3.ph4-ns.pv5.pv6-ns.tc
       app-heading(size='2' text='Testimonials')
 
-      app-paragraph.tc.i(size='3' text='&lsquo;Many experienced adult coders more than willing to help the kids....thank you!&rsquo;' custom-class='mb-0 black-50 mb4')
-      app-paragraph.tc.i(size='3' text='&lsquo;Making the website and solving mazes were my favourite.&rsquo;' custom-class='mb-0 black-50')
+      .p3.tc.i.mb4 &lsquo;Many experienced adult coders more than willing to help the kids....thank you!&rsquo;
+      .p3.tc.i.mb0 &lsquo;Making the website and solving mazes were my favourite.&rsquo;
 
 </template>
 
 <script>
 import appButton from '~/components/atoms/app-button'
 import appHeading from '~/components/atoms/app-heading'
-import appParagraph from '~/components/atoms/app-paragraph'
 
 export default {
   name: 'app-events',
@@ -31,8 +30,7 @@ export default {
 
   components: {
     appButton,
-    appHeading,
-    appParagraph
+    appHeading
   }
 }
 </script>

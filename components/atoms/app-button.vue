@@ -1,5 +1,5 @@
 <template lang="pug">
-a.pointer.f5.f4-ns.b0.dib.bn.br3.dim.pa3.link.white.hover-white(
+a.pointer.f5.f4-ns.b0.dib.bn.br3.dim.pa3.link.white.hover-white.lh-1(
   :href='destination' 
   :class="{ 'bg-blue': primary, 'bg-app-orange': secondary }" 
   :target="target" 
@@ -14,7 +14,7 @@ export default {
     destination: { type: String, default: '' },
     primary: { type: Boolean, default: false },
     secondary: { type: Boolean, default: false },
-    target: { type: Boolean, default: false }
+    target: { type: String, default: '' }
   }
 }
 </script>

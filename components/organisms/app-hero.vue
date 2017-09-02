@@ -21,12 +21,10 @@
 
     .hero__text.pa.w-100.tc.ph3.o-100
       app-heading(size='1' :text='text' custom-class='white ts-1 mb2')
-      app-paragraph(v-if='hasParagraph' size='4' :text='hero.fields.content' custom-class='white ts-1')
 
 </template>
 
 <script>
-import appParagraph from '~/components/atoms/app-paragraph'
 import appHeading from '~/components/atoms/app-heading'
 
 export default {
@@ -41,8 +39,7 @@ export default {
     videoPoster: { default: '' }
   },
   components: {
-    appHeading,
-    appParagraph
+    appHeading
   }
 }
 </script>

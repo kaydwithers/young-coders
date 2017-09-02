@@ -5,16 +5,16 @@
     .db.flex-ns.justify-center.flex-wrap
       .w-100.w-25-ns.ph5.mb5.tc(v-for="avatar in avatars")
         img.db.br-100.mb3(:src='avatar.image')
-        app-paragraph(size='5' :text='avatar.name' custom-class='white mb0 lh-1')
-        // app-paragraph(size='6' :text='avatar.description' custom-class='white-70 mb0')
+        .p5.white.mb0(v-text='avatar.name')
+        //.p6.white.mb0(v-html='avatar.description')
 
   .tc
     app-heading(size='2' text='Our Advisors' custom-class='white mb4')
     .db.flex-ns.justify-center.flex-wrap
       .w-100.w-25-ns.ph5.mb5.tc(v-for="advisor in advisors")
         img.db.br-100.mb3(:src='advisor.image')
-        app-paragraph(size='5' :text='advisor.name' custom-class='white mb0 lh-1')
-        // app-paragraph(size='6' :text='avatar.description' custom-class='white-70 mb0')
+        .p5.white.mb0(v-text='advisor.name')
+        //.p6.white.mb0(v-html='avatar.description')
 
     //- .tc
     //- app-heading(size='2' text='Board Of Directors')

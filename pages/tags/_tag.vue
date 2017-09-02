@@ -14,10 +14,8 @@
 
         app-heading(size='2' :text="'#' + tag")
 
-        app-paragraph(
-          custom-class='mb0 black-50' 
-          size='4' 
-          :text="'All articles tagged ' + '#' + tag + ' (' + posts.length + ')'"
+        .p4.black-50.mb0(
+          v-text="'All articles tagged ' + '#' + tag + ' (' + posts.length + ')'"
         )
 
   .bg-lg-blue-light
