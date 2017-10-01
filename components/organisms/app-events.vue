@@ -46,14 +46,6 @@ export default {
     return {
       pastEvents: [
         {
-          name: 'Coding 102: Website with HTML & CSS',
-          description: '',
-          datetime: '12 August 2017',
-          location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
-          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1502802378/young_coders_coding_102_11_vthtss.jpg',
-          eventlink: 'https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink'
-        },
-        {
           name: 'Coding 101: Building a Static Website',
           description: '',
           datetime: '22 July 2017',
@@ -62,33 +54,41 @@ export default {
           eventlink: 'https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink'
         },
         {
+          name: 'Coding 102: Website with HTML & CSS',
+          description: '',
+          datetime: '12 August 2017',
+          location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
+          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1502802378/young_coders_coding_102_11_vthtss.jpg',
+          eventlink: 'https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink'
+        },
+        {
           name: 'Cyber Security for Kids',
           description: '',
           datetime: '26 August 2017',
           location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
-          image: 'http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto,q_auto,w_500,f_auto/v1504320823/Young%20Coders/young-coders-event-01.jpg',
+          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1506826537/21414707_1802110646483658_222326532769241553_o_uz1bmf.jpg',
           eventlink: 'https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink'
-        }
-      ],
-      upcomingEvents: [
+        },
         {
           name: 'Introduction to Virtual Reality (Advanced Class)',
-          description: 'In this workshop you can expect your Young Coder to learn:<br><ul class="pl4"><li>What VR is, and what the consumer technology to access VR experiences are like, </li><li>Creative and educational uses of VR to improve learning outcomes, knowledge and awareness, </li><li>The joy and wonders of experiencing the world in 3D, and the use of curiosity to drive learning and development.</li></ul>',
-          date: 'Saturday, 9 Sept 2017',
+          description: '',
+          datetime: '9 September 2017',
           time: '12:00pm - 2:00pm',
-          location: 'Cabrini Technology Group <br><a href="https://www.google.com.au/maps/place/Cabrini+Technology+Group/@-37.8976723,145.1350174,15z/data=!4m5!3m4!1s0x0:0xae8a0836a1717ea8!8m2!3d-37.8976723!4d145.1350174" target="_blank">99/45 Gilby Road, Mt Waverley</a>',
-          image: 'http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto,q_auto,w_500,f_auto/v1504320823/Young%20Coders/young-coders-events-vr.jpg',
+          location: 'Cabrini Technology Group, 99/45 Gilby Road, Mt Waverley',
+          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1506826497/21752576_1811075475587175_985959334265212347_o_yus5cv.jpg',
           eventlink: 'https://www.eventbrite.com.au/e/introduction-to-virtual-reality-advanced-class-tickets-37151724809'
         },
         {
           name: 'Introduction to Computing',
-          description: 'Bring your Young Coders along on a magical adventure with Moana and her friends. They will use drag-and-drop visual blocks to write code that is part of a game. Visual programming is a fun and easily understood way to teach the logic of coding, and a great way to get "hooked" on the skills of today and tomorrow.',
-          date: 'Saturday, 23 Sept 2017',
+          description: '',
+          datetime: '23 September 2017',
           time: '12:00pm - 2:00pm',
-          location: 'Isobar <br><a href="https://www.google.com.au/maps/place/Isobar+Australia/@-37.8307045,144.9575699,15z/data=!4m5!3m4!1s0x0:0x778de291fd77bf26!8m2!3d-37.8307045!4d144.9575699?sa=X&ved=0ahUKEwjP7pKTxIXWAhWLmJQKHf5mADEQ_BIIlQEwDg" target="_blank">Level 4, 111 Cecil Street, South Melbourne</a>',
-          image: 'http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto,q_auto,w_500,f_auto/v1504320823/Young%20Coders/young-coders-moana.jpg',
+          location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
+          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1506825959/18_ng2h9d.jpg',
           eventlink: 'https://www.eventbrite.com.au/e/introduction-to-computing-tickets-37151665632'
-        },
+        }
+      ],
+      upcomingEvents: [
         {
           name: 'Coding 101: Building a Static Website',
           description: 'This is going to be a basics of website development. Kids will be able to make their very first website step by step. If your kid has been to our previous workshops, its fine as this workshop is going to be very different than last one and they will learn more about HTML and making websites.',
