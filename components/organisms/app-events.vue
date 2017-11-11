@@ -104,7 +104,7 @@ export default {
           date: 'Saturday, 18 Nov 2017',
           time: '12:00pm - 2:00pm',
           location: 'Isobar <br><a href="https://www.google.com.au/maps/place/Isobar+Australia/@-37.8307045,144.9575699,15z/data=!4m5!3m4!1s0x0:0x778de291fd77bf26!8m2!3d-37.8307045!4d144.9575699?sa=X&ved=0ahUKEwjP7pKTxIXWAhWLmJQKHf5mADEQ_BIIlQEwDg" target="_blank">Level 4, 111 Cecil Street, South Melbourne</a>',
-          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1506826497/21752576_1811075475587175_985959334265212347_o_yus5cv.jpg',
+          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1504009773/o-VIRTUAL-REALITY-GAMES-facebook11-1920x500_slya54.jpg',
           eventlink: 'https://www.eventbrite.com.au/e/coding-101-building-a-static-website-tickets-37413791658'
         },
         {
