@@ -86,17 +86,35 @@ export default {
           location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
           image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1506825959/18_ng2h9d.jpg',
           eventlink: 'https://www.eventbrite.com.au/e/introduction-to-computing-tickets-37151665632'
+        },
+        {
+          name: 'Coding 101: Building a Static Website',
+          description: '',
+          date: '7 October 2017',
+          time: '12:00pm - 2:00pm',
+          location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
+          image: 'http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto,q_auto,w_500,f_auto/v1504320823/Young%20Coders/young-coders-rupert.jpg',
+          eventlink: 'https://www.eventbrite.com.au/e/coding-101-building-a-static-website-tickets-37413791658'
         }
       ],
       upcomingEvents: [
         {
-          name: 'Coding 101: Building a Static Website',
-          description: 'This is going to be a basics of website development. Kids will be able to make their very first website step by step. If your kid has been to our previous workshops, its fine as this workshop is going to be very different than last one and they will learn more about HTML and making websites.',
-          date: 'Saturday, 7 Oct 2017',
+          name: 'Introduction to Virtual Reality',
+          description: 'Virtual Reality (VR) is a new way of experiencing the world, and will change the way people access and interact with their world - just like radio, TV and the internet did!<br>In this workshop you can expect your Young Coder to learn:<br>(i) what VR is, and what the consumer technology to access VR experiences are like,<br>(ii) creative and educational uses of VR to improve learning outcomes, knowledge and awareness,<br>(iii) the joy and wonders of experiencing the world in 3D, and the use of curiosity to drive learning and development.',
+          date: 'Saturday, 18 Nov 2017',
           time: '12:00pm - 2:00pm',
           location: 'Isobar <br><a href="https://www.google.com.au/maps/place/Isobar+Australia/@-37.8307045,144.9575699,15z/data=!4m5!3m4!1s0x0:0x778de291fd77bf26!8m2!3d-37.8307045!4d144.9575699?sa=X&ved=0ahUKEwjP7pKTxIXWAhWLmJQKHf5mADEQ_BIIlQEwDg" target="_blank">Level 4, 111 Cecil Street, South Melbourne</a>',
-          image: 'http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto,q_auto,w_500,f_auto/v1504320823/Young%20Coders/young-coders-rupert.jpg',
+          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1506826497/21752576_1811075475587175_985959334265212347_o_yus5cv.jpg',
           eventlink: 'https://www.eventbrite.com.au/e/coding-101-building-a-static-website-tickets-37413791658'
+        },
+        {
+          name: 'Full Day Coding Bootcamp',
+          description: 'This bootcamp is going to be talked about for years to come...why? because your kids are going to have the TIME of their life. Participating kids get to collaborate in small teams to build a project that they\'re interested in. They are mentored and coached through the project selection and solution definition phases. Then they race off to build their prototypes and get to present their amazing creations to a panel of eager judges - demos and showing off welcome! :)',
+          date: 'Saturday, 9 Dec 2017',
+          time: '9:30am - 5:00pm',
+          location: 'TBC',
+          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto//v1510438562/coding_bootcamp_kmpg2n.jpg',
+          eventlink: 'https://www.eventbrite.com.au/e/coding-bootcamp-tickets-39716129011'
         }
       ]
     }
