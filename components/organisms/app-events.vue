@@ -90,7 +90,7 @@ export default {
         {
           name: 'Coding 101: Building a Static Website',
           description: '',
-          date: '7 October 2017',
+          datetime: '7 October 2017',
           time: '12:00pm - 2:00pm',
           location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
           image: 'http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto,q_auto,w_500,f_auto/v1504320823/Young%20Coders/young-coders-rupert.jpg',
