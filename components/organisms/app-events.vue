@@ -46,30 +46,6 @@ export default {
     return {
       pastEvents: [
         {
-          name: 'Coding 101: Building a Static Website',
-          description: '',
-          datetime: '22 July 2017',
-          location: '25 Glenferrie road, Malvern',
-          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1502802409/young_coders_coding_1011_rqxi3y.jpg',
-          eventlink: 'https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink'
-        },
-        {
-          name: 'Coding 102: Website with HTML & CSS',
-          description: '',
-          datetime: '12 August 2017',
-          location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
-          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1502802378/young_coders_coding_102_11_vthtss.jpg',
-          eventlink: 'https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink'
-        },
-        {
-          name: 'Cyber Security for Kids',
-          description: '',
-          datetime: '26 August 2017',
-          location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
-          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1506826537/21414707_1802110646483658_222326532769241553_o_uz1bmf.jpg',
-          eventlink: 'https://www.eventbrite.com.au/e/cyber-security-for-kids-tickets-36513741584?ref=elink'
-        },
-        {
           name: 'Introduction to Virtual Reality (Advanced Class)',
           description: '',
           datetime: '9 September 2017',
@@ -95,9 +71,7 @@ export default {
           location: 'Isobar, Level 4, 111 Cecil Street, South Melbourne',
           image: 'http://res.cloudinary.com/dvjpaoffl/image/upload/q_auto,q_auto,w_500,f_auto/v1504320823/Young%20Coders/young-coders-rupert.jpg',
           eventlink: 'https://www.eventbrite.com.au/e/coding-101-building-a-static-website-tickets-37413791658'
-        }
-      ],
-      upcomingEvents: [
+        },
         {
           name: 'Introduction to Virtual Reality',
           description: 'Virtual Reality (VR) is a new way of experiencing the world, and will change the way people access and interact with their world - just like radio, TV and the internet did!<br>In this workshop you can expect your Young Coder to learn:<br>(i) what VR is, and what the consumer technology to access VR experiences are like,<br>(ii) creative and educational uses of VR to improve learning outcomes, knowledge and awareness,<br>(iii) the joy and wonders of experiencing the world in 3D, and the use of curiosity to drive learning and development.',
@@ -112,9 +86,20 @@ export default {
           description: 'This bootcamp is going to be talked about for years to come...why? because your kids are going to have the TIME of their life. Participating kids get to collaborate in small teams to build a project that they\'re interested in. They are mentored and coached through the project selection and solution definition phases. Then they race off to build their prototypes and get to present their amazing creations to a panel of eager judges - demos and showing off welcome! :)',
           date: 'Saturday, 9 Dec 2017',
           time: '9:30am - 5:00pm',
-          location: 'TBC',
+          location: 'Isobar <br><a href="https://www.google.com.au/maps/place/Isobar+Australia/@-37.8307045,144.9575699,15z/data=!4m5!3m4!1s0x0:0x778de291fd77bf26!8m2!3d-37.8307045!4d144.9575699?sa=X&ved=0ahUKEwjP7pKTxIXWAhWLmJQKHf5mADEQ_BIIlQEwDg" target="_blank">Level 4, 111 Cecil Street, South Melbourne</a>',
           image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto//v1510438562/coding_bootcamp_kmpg2n.jpg',
           eventlink: 'https://www.eventbrite.com.au/e/coding-bootcamp-tickets-39716129011'
+        }
+      ],
+      upcomingEvents: [
+        {
+          name: 'BUILDING YOUR OWN WEBSITE',
+          description: 'This is going to be a basics of website development. Kids will be able to make their very first website step by step. If your kid has been to our previous workshops, its fine as this workshop is going to be very different than last one and they will learn more about HTML and making websites.',
+          date: 'Saturday, 5 May 2018',
+          time: '12pm - 2:00pm',
+          location: 'General Assembly, Level 12a, 45 William St, Melbourne, VIC 3000, Australia',
+          image: 'http://res.cloudinary.com/dvkozhom2/image/upload/q_auto,q_auto,w_500,f_auto/v1502802409/young_coders_coding_1011_rqxi3y.jpg',
+          eventlink: 'https://www.eventbrite.com.au/e/building-your-own-website-tickets-45294374694'
         }
       ]
     }
