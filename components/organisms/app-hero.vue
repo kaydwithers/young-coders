@@ -35,8 +35,8 @@ export default {
     text: { default: '[PH] Text' },
     hasParagraph: { default: false },
     hasArrow: { default: false },
-    videoSource: { default: 'http://res.cloudinary.com/dvjpaoffl/video/upload/v1499489853/Young%20Coders/coding.mp4' },
-    videoPoster: { default: '' }
+    videoSource: { default: 'http://res.cloudinary.com/dvjpaoffl/video/upload/v1499489853/Young%20Coders/codin' },
+    videoPoster: { default: 'http://res.cloudinary.com/dvkozhom2/image/upload/v1525260477/Backlit_keyboard_yb1dta.jpg' }
   },
   components: {
     appHeading
